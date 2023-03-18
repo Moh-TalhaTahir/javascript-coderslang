@@ -8,7 +8,7 @@ export const init = (term) => {
 export const updateGold = (term,state) => {
     term.moveTo(25, 2);
     term.eraseLineAfter();
-    term.bold.yellow(state.gold + "   ");
+    term.bold.yellow(formatNumber(state.gold) + "   ");
     state.gold += state.productionRate;
 }
 export const checkInitCompleted = (term, state) => {
@@ -20,7 +20,7 @@ export const checkInitCompleted = (term, state) => {
     term("GOLD: ${state.gold}");
     term.moveTo(25, 2);
     term.eraseLineAfter();
-    term("PRODUCTION RATE: ${state.productionRate}");
+    term("PRODUCTION RATE: ${formatNumber(state.productionRate)}");
     state.isProducerListUpdated = false;
   } 
 
@@ -40,4 +40,18 @@ export const updateProducerList = (term,state) => {
     
     });
     state.isProducerListUpdated = true;
+}
+
+export const formatNumber = (n) => {
+    if (Math.abs(n) < 1000) {
+        return n.toFixed(1);
+    } else if (Math.abs(n) < 1000000) {
+        return (n/1000).toFixed(2) + 'K';
+    } else if (Math.abs(n) < 1000000000) {
+        return (n/1000000).toFixed(2) + 'M';
+    } else if (Math.abs(n) < 1000000000) {
+        return (n/1000000000).toFixed(2) + 'B';
+    } else {
+        return (n/1000000000000).toFixed(2) + 'T';
+    }
 }

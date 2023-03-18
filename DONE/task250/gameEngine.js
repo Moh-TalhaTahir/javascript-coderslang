@@ -5,5 +5,5 @@ export const startMiningGame = (term,state) => {
     init(term);
     term.on('key', handleKeyPress(term,state));
     handleKeyPress(term, state);
-    setInterval(handleStateChange(term,state),1000);
+    setInterval(handleStateChange(term,state),state.tickSpeed);
 }
