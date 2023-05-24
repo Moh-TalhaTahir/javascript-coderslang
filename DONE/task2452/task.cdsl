@@ -1,0 +1,28 @@
+{
+  "jsLectureId": 245,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Fix the script",
+      "description": [
+        "Your colleague has added an external script that compliments the internal one.",
+        "The problem is that something's off and there's an error in the console.",
+        "Function `isLoaded` should remain where it is and should be called from the external script."
+      ]
+    },
+    "ru": {
+      "title": "Чиним скрипт",
+      "description": [
+        "Твой коллега подключил внешний скрипт, который дополняет внутренний.",
+        "Но что-то работает не так и в консоли ошибка. Давай попробуем все починить.",
+        "Метод `isLoaded` должен оставаться там же, где он сейчас.",
+        "Вызов метода `isLoaded` должен быть из внешнего скрипта."
+      ]
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 247,
+  "reward": 1,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Missing a title",
+      "description": [
+        "Our list is missing a title. Let's add one with the script.",
+        "The title must be an `h3` element with the `Browsers` inner text.",
+        "It should appear immediately before the `ul` tag.",
+        "Use the inline script."
+      ]
+    },
+    "ru": {
+      "title": "Не хватает заголовка",
+      "description": [
+        "Нашему списку не хватает заголовка. С помощью скрипта давай добавим его.",
+        "Заголовок должен быть элементом `h3` с внутренним текстом `Browsers`.",
+        "Появится он должен сразу перед тегом `ul`.",
+        "Используй встроенный скрипт."
+      ]
+    }
+  }
+}

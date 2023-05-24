@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 248,
+  "reward": 1,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "DOM is ready",
+      "description": [
+        "We need to fix the script a little.",
+        "The message `DOM is ready` should be printed to the console.",
+        "Items cannot be swapped.",
+        "Modify the existing script, do not delete or change the `if` condition. "
+      ]
+    },
+    "ru": {
+      "title": "DOM готов",
+      "description": [
+        "Надо немного исправить скрипт.",
+        "Сообщение `DOM is ready` должно выводится в консоль.",
+        "Нельзя менять местами элементы.",
+        "Доработай уже существущий скрипт, не удаляи и не изменяй условие `if`."
+      ]
+    }
+  }
+}

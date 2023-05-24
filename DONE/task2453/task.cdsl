@@ -1,0 +1,31 @@
+{
+  "jsLectureId": 245,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Let's meet",
+      "description": [
+        "You should know, who your users are.",
+        "Lets ask them to enter their name. The question should be - `What is your name?`.",
+        "If user has entered something - log this string to the console.",
+        "If user has entered nothing - log the `No name provided` string.",
+        "Use internal script"
+      ]
+    },
+    "ru": {
+      "title": "Давай познакомимся",
+      "description": [
+        "Надо знать, кем являются твои пользователи.",
+        "Давай попросим их ввести своей имя. Вопрос пусть звучит так: `What is your name?`.",
+        "Если пользователь что-нибудь ввел - выведи эту строку в консоль.",
+        "Если пользователь ничего не ввел - выведи в консоль строку `No name provided`.",
+        "Используй внутренний скрипт"
+      ]
+    }
+  }
+}

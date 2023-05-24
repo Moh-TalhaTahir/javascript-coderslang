@@ -1,0 +1,35 @@
+{
+  "jsLectureId": 248,
+  "reward": 4,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Text editor",
+      "description": [
+        "Let's write a text editor.",
+        "- When pressing the `Enter` button, a new `p` element should appear at the end of the `body`.",
+        "- When you press the keys, the last character should be added to the inner text of the last paragraph.",
+        "- When you press the buttons -` Shift`, `Alt`,` Control`, `Ctrl` - nothing should happen.",
+        "- When you press the `Backspace` button, you need to delete the last character of the inner text in the last paragraph. ",
+        "- When you press the `Backspace` and there's just a single character in the paragraph, delete this character and the last paragraph",
+        "Use the internal script."
+      ]
+    },
+    "ru": {
+      "title": "Текстовый редактор",
+      "description": [
+        "Напишем текстовый редактор.",
+        "- При нажатии на кнопку `Enter` - в конце `body` должен появляться новый элемент `p`.",
+        "- При нажатии на клавиши внутреннему тексту последнего параграфа должно добавляться последний символ.",
+        "- При нажатии на кнопки - `Shift`, `Alt`, `Control`, `Ctrl` - ничего не должно происходить.",
+        "- При нажатии на кнопку `Backspace` - нужно удалить последний символ внутреннего текст в последнем параграфе.",
+        "- Если в параграфе остался только символ, то после его удаления удаляй и сам последний параграф.",
+        "Используй внутренний скрипт."
+      ]
+    }
+  }
+}

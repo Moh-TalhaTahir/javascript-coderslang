@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hi</title>
+  </head>
+  <body>
+    <script>
+      const name = prompt('What is your name?');
+      const age = prompt("How old are you?");
+      const element = document.createElement('p');
+      if(!name || !age || isNaN(age)){
+        element.innerHTML = "Invalid data";
+      }else{
+        element.innerHTML= `Hi, ${name}! I am ${age} years old too.`
+      }
+      document.body.append(element);
+    </script>
+  </body>
+</html>

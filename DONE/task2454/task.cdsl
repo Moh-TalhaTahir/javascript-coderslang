@@ -1,0 +1,31 @@
+{
+  "jsLectureId": 245,
+  "reward": 3,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Odd or even",
+      "description": [
+        "Let's write a script that checks the number entered by the user for a match.",
+        "The message to enter must be `Enter number`, initial value is `100`",
+        "If the user entered something that's not a number, you need to show the `alert` modal with the text: `Not a number`.",
+        "If you entered a number, we check if it's even. If it is, we show a modal window with the text `Even`, otherwise - `Odd`.",
+        "Use the internal script."
+      ]
+    },
+    "ru": {
+      "title": "Четное или нечетное",
+      "description": [
+        "Напишем скрипт, которую проверяет введенное пользователем число на четность.",
+        "Сообщение для ввода должно быть `Enter number`, начальное значение - `100`",
+        "Если пользователь ввел не число, нужно показать модальное окно `alert` с текстом: `Not a number`.",
+        "Если ввел число - проверяем на четность. Если четное - показываем модальное окно с текстом `Even`, иначе - `Odd`.",
+        "Используй внутренний скрипт."
+      ]
+    }
+  }
+}

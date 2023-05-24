@@ -1,0 +1,27 @@
+{
+  "jsLectureId": 246,
+  "reward": 1,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Combinations of selectors",
+      "description": [
+        "Let's print to the console all the items with the `item` class that are inside the `car` block.",
+        "Use methods to get elements by identifier and class for this.",
+        "Use internal scripts."
+      ]
+    },
+    "ru": {
+      "title": "Комбинации селекторов",
+      "description": [
+        "Давай выведем в консоль все элементы с классом `item`, которые находятся внутри блока `car`.",
+        "Используй для этого методы получения элементов по идентификатору и классу.",
+        "Используй внутренние скрипты."
+      ]
+    }
+  }
+}

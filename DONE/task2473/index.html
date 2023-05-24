@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Years</title>
+  </head>
+  <body>
+    <h3>Years</h3>
+    
+    <ul>
+      <li>1923</li>
+      <li>1989</li>
+      <li>1923</li>
+      <li>1974</li>
+      <li>1974</li>
+      <li>1974</li>
+      <li>1937</li>
+      <li>1991</li>
+      <li>1997</li>
+      <li>1989</li>
+    </ul>
+    <script>
+      const element = document.querySelectorAll('ul li');
+       for(let i=0 ; i<element.length;i++){
+         for(let j=i+1 ; j<element.length;j++){
+           if(element[i].innerHTML===element[j].innerHTML){
+             element[j].remove();
+           }
+         }
+       }
+     </script>
+
+  </body>
+</html>

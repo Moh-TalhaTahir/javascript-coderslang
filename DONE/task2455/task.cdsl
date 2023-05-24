@@ -1,0 +1,43 @@
+{
+  "jsLectureId": 245,
+  "reward": 4,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Newsletter",
+      "description": [
+        "Let's get the mail from the user, the question is `Please, enter your email`.",
+        "",
+        "If the mail contains the `@` symbol, check with the user if he wants to receive the newsletter.",
+        "The question should be like this - `Do you want to receive our newsletter?`, The window should have two buttons - `Ok` and `Cancel`.",
+        "When you click on `Ok`, we show `alert` with the message - `Thank you for trust.`.",
+        "When you click on `Cancel`, we show `alert` with a message - `Maybe next time.`.",
+        "",
+        "If the mail does not contain the `@` symbol, then the field for entering mail must be shown again.",
+        "Show it until the symbol is found.",
+        "",
+        "Use the internal script."
+      ]
+    },
+    "ru": {
+      "title": "Рассылка",
+      "description": [
+        "Давай узнаем почту у пользователя, вопрос звучит так - `Please, enter your email`.",
+        "",
+        "Если почта содержит символ `@`, уточним у пользователя, хочет ли он получить рассылку.",
+        "Вопрос должен быть таким - `Do you want to receive our newsletter?`, у окна должна быть две кнопки - `Ok` и `Cancel`.",
+        "При нажатии на `Ok` - показываем `alert` с сообщением - `Thank you for trust.`.",
+        "При нажатии на `Cancel` - показываем `alert` с сообщением - `Maybe next time.`.",
+        "",
+        "Если почта не содержит символ `@` - надо снова показать поле для ввода почты.",
+        "Показываем его, пока символ не будет найден.",
+        "",
+        "Используй внутренний скрипт."
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "jsLectureId": 247,
+  "reward": 3,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Hi, Bob",
+      "description": [
+        "Let's ask the users for their name and age.",
+        "",
+        "The first question should be `What is your name?`.",
+        "The second question should be `How old are you?`.",
+        "",
+        "If at least one field is empty, or age is not a number,",
+        "add a `p` element to the `body` with the text: `Invalid data`",
+        "",
+        "If all is well, show the message: `Hi, {name}! I am {age} years old too.`.",
+        "{name} is a user-entered name, {age} is a user-entered age.",
+        "Use the internal script."
+      ]
+    },
+    "ru": {
+      "title": "Привет, Боб",
+      "description": [
+        "Давай спросим у пользователя его имя и возраст.",
+        "",
+        "Первый вопрос должен быть `What is your name?`.",
+        "Второй вопрос должен быть `How old are you?`.",
+        "",
+        "Если хоть одно поле будет пустым, или возраст будет не цифрой,",
+        "добавь к `body` элемент `p` с текстом: `Invalid data`",
+        "",
+        "Если все хорошо - покажи сообщение: `Hi, {name}! I am {age} years old too.`.",
+        "{name} - введенное пользователем имя, {age} - введенный пользователем возраст.",
+        "Используй внутренний скрипт."
+      ]
+    }
+  }
+}

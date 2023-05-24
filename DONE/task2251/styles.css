@@ -1,0 +1,289 @@
+@font-face {
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/Jost-Regular.ttf')format('truetype');
+}
+@font-face {
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 600;
+    src: url('./fonts/Jost-SemiBold.ttf')format('truetype');
+}
+
+
+
+*{
+    font-family: Jost,sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.logo-container{
+    height:60px;
+}
+
+.logo-container img{    
+    height:60px;
+}
+
+header{
+    background-color: #E4ECEE;
+}
+
+.container{
+    max-width:1320px;
+    margin: 0 auto;
+}
+
+.menu-block{
+    display:flex;
+    margin-left: auto;
+}
+
+.main-menu{
+    display:flex;
+    list-style:none;
+    padding-left: 0;
+}
+   
+
+
+.nav-item-link{
+    display: block;
+    padding:35px 20px 33px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    line-height: 1.5;
+    color:rgb(31, 31, 31);
+    letter-spacing:-0.4px;
+}
+
+nav{
+    display:flex;
+    align-items: center;
+}
+
+.header-btn{
+    display:flex;
+}
+
+.download-btn{
+    display: flex;
+    font-size:1rem;
+    letter-spacing:-0.4px;
+    line-height:10px;
+    color:#ffffff;
+    height:40px;
+    background-color: #1f1f1f;
+    border-radius: 3px;
+    margin-left: 15px;
+    padding:15px;
+    text-decoration: none;
+}
+
+.banner-section{
+    background-color: #E4ECEE;
+}
+
+.row{
+    display:grid;
+    padding:25px 24px 0 24px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+img{
+    max-width: 100%;
+    max-height: 550px;
+}
+
+.column-offset{
+    margin-left: 8%;
+}
+
+.content{
+    padding-top: 75px;
+}
+
+.content h1{
+    font-size: 70px;
+    line-height: 72px;
+}
+
+.content p{
+    font-size: 24px;
+    line-height: 36px;
+    color: #222F3F;
+    letter-spacing: -0.3px;
+    margin: 25px 0px 35px 0px;
+}
+
+.border-bottom{
+    border-bottom: 1px solid #dee2e6;
+}
+
+.description-section{
+    padding-top:75px;
+}
+
+.section-image img{
+    max-height: 400px;
+}
+
+.section-image{
+    max-height: 400px;
+}
+
+.comments-section{
+    background-color: #E4ECEE;
+    padding-top: 50px;
+    padding-bottom: 32px;
+}
+
+.comments-section h2{
+    font-size: 60px;
+    line-height: 64px;
+}
+
+.one-column{
+    display:grid;
+    grid-template-columns: auto;
+}
+
+.columns-view{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 32px;
+}
+
+.one-column h2{
+    text-align:center;
+}
+
+.card{
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding:32px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card p{
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 24px;
+    letter-spacing: -0.1px;
+    color: #1f1f1f;
+}
+
+.user{
+    display:flex;
+}
+
+.user-image img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 22px;
+}
+
+.user h5{
+    font-size: 17px;
+    line-height:28px;
+    color:#1f1f1f;
+    letter-spacing: -0.3px;
+}
+
+.join-section{
+    padding-top:30px;
+    padding-bottom:50px;
+}
+
+.app-buttons{
+    display:flex;
+    justify-content: center;
+}
+
+.app-buttons a{
+    margin:0 24px;
+}
+
+.platform.large{
+    height:70px;
+}
+
+.platform.small{
+    height:50px;
+}
+
+footer{
+    padding:30px 0;
+}
+
+.copyright{
+    display:flex;
+    justify-content: flex-end;
+}
+
+@media all and (max-width:1400px){
+    .container{
+        max-width: 1140px;
+    }
+    
+}
+
+@media all and (max-width:1200px){
+    .container{
+        max-width: 960px;
+    }
+    .content h1 {
+        font-size: 60px;
+        line-height: 70px;
+      }
+      
+}
+
+@media all and (max-width:992px){
+    .container{
+        max-width: 720px;
+    }
+    .content h1 {
+        font-size: 40px;
+        line-height: 46px;
+      }
+      .banner-section {
+        margin-bottom: 40px;
+        padding-bottom: 40px; /* 1. */
+      }
+
+      .banner-section .row,
+      .description-section .row {
+        display: grid;
+        grid-template-columns: auto; /* 2. */
+      }
+
+      .column-offset {
+        margin-left: 0; /* 4. */
+      }
+
+      .description-section:nth-child(3) .row .column:first-child {
+        order: 2; /* 5. */
+      }
+
+      .banner-section .app-buttons {
+        justify-content: flex-start; /* 6. */
+      }
+
+      .banner-section .app-buttons a:first-child {
+        margin-left: 0; /* 7. */
+      }
+
+      .section-image img {
+        margin: 0 auto; /* 8. */
+        display: block; /* 9. */
+      }
+
+      .comments-section .columns-view {
+        grid-template-columns: repeat(2, 1fr); /* 10. */
+      }
+}

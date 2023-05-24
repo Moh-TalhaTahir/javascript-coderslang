@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EU</title>
+    <style>
+      .header {
+        text-align: center;
+        color:  rgb(255, 198, 0);
+      }
+      .section {
+        display: grid;
+        grid-template-columns: repeat(6, 200px);
+        justify-content: space-between;
+        padding: 0 50px;
+      }
+      .item {
+        background-color:  rgb(255, 198, 0);
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 4px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      const list = document.getElementsByTagName('div');
+      console.log(list);
+    </script>
+    <h2 class="header">First European Union countries</h2>
+    <div class="section">
+      <div class="item">Belgium</div>
+      <div class="item">Germany</div>
+      <div class="item">France</div>
+      <div class="item">Italy</div>
+      <div class="item">Luxembourg</div>
+      <div class="item">the Netherlands</div>
+    </div>
+  </body>
+</html>

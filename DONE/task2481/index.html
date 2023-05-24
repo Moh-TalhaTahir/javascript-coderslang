@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM is ready</title>
+  </head>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded",()=>{
+        const h2 = document.querySelector('h2');
+      if (h2) {
+        console.log('DOM is ready');
+      }
+      });
+      
+    </script>
+    <h2 style="text-align: center;">DOM is ready</h2>
+  </body>
+<html>

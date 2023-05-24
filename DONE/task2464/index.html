@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>paintings</title>
+    <style>
+      #header {
+        text-align: center;
+        color:  rgb(255, 198, 0);
+        max-width: 400px;
+        margin: 1rem auto;
+      }
+      .section {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        place-items: center;
+        padding: 0 50px;
+        gap: 20px;
+      }
+      .item {
+        background-color:  rgb(255, 198, 0);
+        color: white;
+        width: 250px;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 4px;
+        text-align: center;
+      }
+      .painting {
+        font-size: 1rem;
+      }
+      .author {
+        font-size: 0.8rem;
+        text-align: right;
+      }
+      .price {
+        margin-top: 10px;
+        font-size: 1.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 id="header">3 of the Most Expensive Paintings Ever Sold at Auction</h2>
+    <div class="section">
+      <div class="item">
+        <div class="painting name">Salvator Mundi</div>
+        <div class="painting author">Leonardo da Vinci</div>
+        <div class="painting price" id="art_most-expensive">$450.3 million</div>
+      </div>
+      <div class="item">
+        <div class="painting name">Les Femmes d'Alger</div>
+        <div class="painting author" id="art_favorite-artist">Pablo Picasso</div>
+        <div class="painting price">$179.4 million</div>
+      </div>
+      <div class="item">
+        <div class="painting name">Nu couche</div>
+        <div class="painting author" id="italian-artist">Amedeo Modigliani</div>
+        <div class="painting price">$170.4 million</div>
+      </div>
+    </div>
+    <script>
+      const art = document.querySelectorAll('[id^=art]')
+      console.log(art);
+    </script>
+  </body>
+</html>

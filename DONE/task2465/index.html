@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My teachers</title>
+  </head>
+  <body>
+    <h2>My teachers</h2>
+    <div class="section">
+      <img src="https://learn.coderslang.com/avatar Fei.svg" alt="Fei">
+      <img src="https://learn.coderslang.com/avatar Sigma.svg" title="Mrs Sigma" alt="Sigma">
+      <img src="https://learn.coderslang.com/avatar Professor.svg" title="Mr Professor" alt="Professor">
+      <img src="https://learn.coderslang.com/avatar Technic.svg" alt="Technic">
+      <script>
+            var images = document.getElementsByTagName('img');
+    
+            // Iterate through each image
+            for (var i = 0; i < images.length; i++) {
+                var image = images[i];
+    
+                // Check if the image has a title attribute
+                if (!image.hasAttribute('title')) {
+                    // Get the alt attribute value
+                    var altText = image.getAttribute('alt');
+    
+                    // Add the title attribute with the alt attribute value
+                    image.setAttribute('title', altText);
+                }
+            }
+        
+    </script>
+    
+    </div>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+{
+  "jsLectureId": 248,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Counter",
+      "description": [
+        "We will develop a counter that will add and subtract one.",
+        "To do this, you need to add a paragraph on the page, initially it should contain the number `0`.",
+        "Digit size is `2rem`.",
+        "There are two buttons under the paragraph - the left one displays the` -` character, the right one displays the `+` character. ",
+        "The size of the characters is `2rem`.",
+        "When you press the left button, the number in the paragraph should decrease by one.",
+        "When you click on the right - to increase.",
+        "Use internal styles and scripts."
+      ]
+    },
+    "ru": {
+      "title": "Счетчик",
+      "description": [
+        "Разработаем счетчик который будет и добавлять и отнимать единицу.",
+        "Для этого надо на странице добавить параграф, изначально в нем должно быть цифра `0`.",
+        "Размер цифры - `2rem`.",
+        "Под параграфом две кнопки - левая отображает символ `-`, правая - символ `+`.",
+        "Размер символов - `2rem`.",
+        "При нажатии на левую кнопку - цифра в параграфе должно уменьшаться на единицу.",
+        "При нажатии на правую - увеличиваться.",
+        "Используй внутренние стили и скрипты."
+      ]
+    }
+  }
+}

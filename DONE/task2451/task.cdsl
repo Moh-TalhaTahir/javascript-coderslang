@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 245,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Connecting scripts",
+      "description": [
+        "One script has already been added to `index.html` that displays the message `This is the second message`.",
+        "You need to add one more script in which the message should be displayed in the console: `This is the first message`.",
+        "This message should appear before the message `This is the second message`.",
+        "Do not use external scripts."
+      ]
+    },
+    "ru": {
+      "title": "Подключаем скрипты",
+      "description": [
+        "В `index.html` уже добавлен один скрипт который выводит сообщение `This is the second message`.",
+        "Тебе надо добавить еще один скрипт в котором в консоль должно выводится сообщение: `This is the first message`.",
+        "Это сообщение должно выводится перед сообщением `This is the second message`.",
+        "Не используй внешних скриптов."
+      ]
+    }
+  }
+}

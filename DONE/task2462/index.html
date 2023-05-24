@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The biggest</title>
+    <style>
+      .header {
+        text-align: center;
+        color:  rgb(255, 198, 0);
+      }
+      .section {
+        display: grid;
+        grid-template-columns: repeat(6, 200px);
+        justify-content: space-between;
+        padding: 0 50px;
+      }
+      .item {
+        background-color:  rgb(255, 198, 0);
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 4px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <h2 class="header">Biggest IT companies</h2>
+    <div id="it" class="section">
+      <div class="item">Apple</div>
+      <div class="item">Samsung Electronics</div>
+      <div class="item">Foxconn</div>
+      <div class="item">Alphabet</div>
+      <div class="item">Microsoft</div>
+    </div>
+    <h2 class="header"> Biggest Car Companies</h2>
+    <div id="car" class="section">
+      <div class="item">Toyota Motor Corp.</div>
+      <div class="item">Volkswagen AG</div>
+      <div class="item">Daimler AG</div>
+      <div class="item">Ford Motor Co.</div>
+      <div class="item">Honda Motor Co. Ltd.</div>
+      <script>
+        const getid = document.getElementById("car");
+        const stuff = getid.getElementsByClassName("item");
+        const stuffArr = [];
+        for(let i=0;i<stuff.length;i++){
+          stuffArr.push(stuff[i]);
+        }
+        console.log(stuff);
+      </script>
+    </div>
+  </body>
+</html>

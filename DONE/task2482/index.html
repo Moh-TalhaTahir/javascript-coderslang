@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Remove</title>
+  </head>
+  <body>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <button>Delete paragraph</button>
+    <script>
+      const button = document.querySelector('button');
+      
+      function deleteParagraph() {
+        
+        const paragraphs = document.querySelectorAll('p');
+        paragraphs[paragraphs.length - 1].remove();
+       
+        button.removeEventListener('click',deleteParagraph);
+      
+      }
+     button.addEventListener('click',deleteParagraph);
+      
+    </script>
+  </body>
+</html>

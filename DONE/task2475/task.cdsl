@@ -1,0 +1,33 @@
+{
+  "jsLectureId": 247,
+  "reward": 4,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Lists render",
+      "description": [
+        "A script with a bird data object has been added to the file `index.html`.",
+        "You need to go through the properties of this object and add each property to the `body`.",
+        "The property must appear in the `h3` tag.",
+        "A ul element must appear under each heading.",
+        "The elements of the corresponding field become elements of each list.",
+        "Use the internal script."
+      ]
+    },
+    "ru": {
+      "title":  "Рендер списков",
+      "description": [
+        "В файле `index.html` добавлен скрипт с объектом с данными о птицах.",
+        "Нужно пройтись по свойствам этого объекта и каждое свойство добавить в `body`.",
+        "Свойство должно появится в теге `h3`.",
+        "Под каждым заголовком должен появится элемент `ul`.",
+        "Элементами каждого списка должны стать элементы массива соответствующего поля.",
+        "Используй внутренний скрипт."
+      ]
+    }
+  }
+}

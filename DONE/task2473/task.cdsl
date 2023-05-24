@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 247,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Filtering the list",
+      "description": [
+        "The document contains a list of years, but some of them are repeated.",
+        "We need to write a script that leaves only unique elements by removing duplicates.",
+        "The order of the items in the list must be preserved.",
+        "Use the internal script."
+      ]
+    },
+    "ru": {
+      "title": "Фильтруем список",
+      "description": [
+        "В документе есть список годов, но некоторые из них повторяются.",
+        "Нужно написать скрипт, которые оставит только уникальные элементы, удалив повторы.",
+        "Порядок элементов списка должен сохранится.",
+        "Используй внутренний скрипт."
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>Birds</title>
+  </head>
+  <body>
+    <script>
+      const birds = {
+        "North American Birds": [
+          "Abert's Towhee",
+          "Acadian Flycatcher",
+          "Acorn Woodpecker",
+          "Bendire's Thrasher",
+        ],
+        "European Birds": [
+          "Taiga bean goose",
+          "Lesser white-fronted goose",
+          "Tundra swan",
+          "Barrow's goldeneye",
+        ],
+      };
+      const element1 = document.createElement('h3');
+      const element2 = document.createElement('h3');
+      element1.innerHTML = "North American Birds";
+      element2.innerHTML = "European Birds";
+      document.body.append(element1);
+      document.body.append(element2);
+
+      const ulist1 = document.createElement('ul');
+      const ulist2 = document.createElement('ul');
+      document.querySelector('body>h3').after(ulist1);
+      document.querySelector('h3~h3').after(ulist2);
+
+      for (let i = 0; i < birds["North American Birds"].length; i++) {
+        const li1 = document.createElement('li');
+        li1.innerHTML = birds["North American Birds"][i];
+        document.querySelector("body>h3~ul").append(li1);
+      }
+
+      for (let j = 0; j < birds["European Birds"].length; j++) {
+        const li2 = document.createElement('li');
+        li2.innerHTML = birds["European Birds"][j];
+        document.querySelector("h3~h3~ul").append(li2);
+      }
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 248,
+  "reward": 1,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Removing the handler",
+      "description": [
+        "The script needs to be improved.",
+        "The first thing to do is add the `deleteParagraph` function as a handler for the button click. ",
+        "After the first activation of the function, this handler must be removed.",
+        "Modify an existing script."
+      ]
+    },
+    "ru": {
+      "title": "Удаляем обработчик",
+      "description": [
+        "Нужно доработать скрипт.",
+        "Первое, что нужно сделать - добавить функцию `deleteParagraph` в качестве обработчика нажатия кнопки.",
+        "После первого срабатывания функции этот обработчик надо удалить.",
+        "Дорабатывай уже существующий скрипт."
+      ]
+    }
+  }
+}

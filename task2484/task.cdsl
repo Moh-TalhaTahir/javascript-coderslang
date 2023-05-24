@@ -1,0 +1,33 @@
+{
+  "jsLectureId": 248,
+  "reward": 1,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Always ready to help",
+      "description": [
+        "Your colleague asked you for help.",
+        "Let's help him finish the script.",
+        "When the button is pressed, the inner text of the paragraph must be supplemented with the next array element.",
+        "A comma and a space must be added before the new element.",
+        "When all the items have been added, clicking on the button should do nothing.",
+        "Modify the already added script."
+      ]
+    },
+    "ru": {
+      "title": "Всегда готов помочь",
+      "description": [
+        "Твой коллега обратился к тебе за помощью.",
+        "Давай поможем ему закончить скрипт.",
+        "При нажатии на кнопку внутренний текст параграфа должен дополняться следующим элементом массива.",
+        "Перед новым элементом нужно добавить запятую и пробел.",
+        "Когда все элементы будут добавлены, нажатие на кнопку ничего не должно делать.",
+        "Дорабатывай уже добавленный скрипт."
+      ]
+    }
+  }
+}

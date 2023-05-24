@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Books</title>
+    <style>
+      .header {
+        text-align: center;
+        color:  rgb(255, 198, 0);
+      }
+      .section {
+        display: grid;
+        rows: repeat(6, 1fr);
+        place-items: center;
+        padding: 0 50px;
+        gap: 20px;
+      }
+      .item {
+        background-color:  rgb(255, 198, 0);
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 4px;
+        text-align: center;
+      }
+      .book {
+        font-size: 1rem;
+      }
+      .author {
+        font-size: 0.8rem;
+        text-align: right;
+      }
+      .favorite {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="header">BBC The Big Read - Top 5 Books </h2>
+    <div class="section">
+      <div class="item">
+        <div class="book name">The Lord of the Rings</div>
+        <div class="book author">by J.R.R. Tolkien</div>
+      </div>
+      <div class="item">
+        <div class="book name">Pride and Prejudice</div>
+        <div class="book author">by Jane Austen</div>
+      </div>
+      <div class="item">
+        <div class="book name">His Dark Materials</div>
+        <div class="book author">by Philip Pullman</div>
+      </div>
+      <div class="item">
+        <div class="book name">The Hitchhiker's Guide to the Galaxy</div>
+        <div class="book author">by Douglas Adams</div>
+      </div>
+      <div class="item">
+        <div class="book name">Harry Potter and the Goblet of Fire</div>
+        <div class="book author">by J.K. Rowling</div>
+      </div>
+    </div>
+    <h2 class="header">My favorite book</h2>
+    <div class="section">
+      <div class="item">
+        <div class="favorite name">You Don't Know JS </div>
+        <div class="favorite author">Kyle Simpson</div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const booksAuthors = document.getElementsByClassName('book author');
+    const booksNames = document.getElementsByClassName('book name');
+    console.log('authors', booksAuthors);
+    console.log('names', booksNames);
+  </script>
+</html>

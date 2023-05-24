@@ -1,0 +1,27 @@
+{
+  "jsLectureId": 246,
+  "reward": 1,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Find them all",
+      "description": [
+        "The task is very simple - you need to display a list of all `div` elements in the console.",
+        "Use the method of retrieving items by tag name for this.",
+        "Use internal scripts"
+      ]
+    },
+    "ru": {
+      "title": "Найди их все",
+      "description": [
+        "Задача очень простая - надо в консоль вывести список всех элементов `div`.",
+        "Используй для этог метод получения элементов по имени тега.",
+        "Используй внутренние скрипты"
+      ]
+    }
+  }
+}

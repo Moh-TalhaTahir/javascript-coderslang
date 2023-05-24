@@ -1,0 +1,23 @@
+{
+  "jsLectureId": 248,
+  "reward": 5,
+  "tutors": [
+    "Technic"
+  ],
+  "entryPoint": "solution.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Click counter",
+      "description": [
+        "Figure out what's the expected behavior of the html page and write the necessary js code between <script> </script> tags."
+      ]
+    },
+    "ru": {
+      "title": "Счетчик кликов",
+      "description": [
+        "Догадайся что должно происходить на странице и добавь необходимый js код между тегами <script> </script>."
+      ]
+    }
+  }
+}

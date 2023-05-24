@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>Media queries</title>
+    <style>
+      @media screen and (max-width:480px){
+        nav{
+          justify-content: start;
+          height: 50px;
+          width: 100%;
+          }
+          li{
+            font-size:0.8rem;
+            
+          }
+          ul{
+            padding:0 10px;
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+          }
+      }
+      body {
+        margin: 0;
+        height: 100vh;
+        font-family: monospace;
+      }
+      nav {
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 250px;
+        height: 100%;
+      }
+      li {
+        color: white;
+        list-style: none;
+        margin: 20px 0;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1.5rem;
+        transition: color 0.5s;
+      }
+      li:hover {
+        color: #EAE2B7;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>Main page</li>
+        <li>About us</li>
+        <li>Contact us</li>
+      </ul>
+    </nav>
+  </body>
+</html>

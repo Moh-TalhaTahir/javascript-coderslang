@@ -1,0 +1,33 @@
+{
+  "jsLectureId": 246,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "I am in a hurry to help",
+      "description": [
+        "Your colleague has asked you for help. He wants to get two lists.",
+        "The first list is a list of items with the title of books from the `BBC The Big Read`.",
+        "The second list is a list of items with the authors of these books.",
+        "But the script in this case displays two identical lists.",
+        "Help your colleague and fix hix items search.",
+        "Do not change the search or console output order."
+      ]
+    },
+    "ru": {
+      "title": "Спешу на помощь",
+      "description": [
+        "Твой коллега обратился к тебе за помощью. Он хочет получить два списка.",
+        "Первый список - это список элементов с названием книг из `BBC The Big Read`.",
+        "Второй список - это список элементов с авторами этих книг.",
+        "Но скрипт в этом случае выводит два одинаковых списка.",
+        "Помоги своему коллеге и исправь поиск элементов.",
+        "Не изменяй порядок поиска или вывода в консоль."
+      ]
+    }
+  }
+}
