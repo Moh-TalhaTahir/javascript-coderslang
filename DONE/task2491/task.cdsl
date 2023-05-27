@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 249,
+  "reward": 1,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Bubbling",
+      "description": [
+        "Click handlers are already added to the elements of the seasons list",
+        "But one more handler is needed.",
+        "When clicking on any item in this list, the `Updated` message should be logged to the console.",
+        "Use the internal script."
+      ]
+    },
+    "ru": {
+      "title": "Всплытие",
+      "description": [
+        "Элементам списка времен года добавлены обработчики нажатия",
+        "Но нужен еще один обработчик.",
+        "При нажатии на любой элемент этого списка надо выводить в консоль сообщение `Updated`.",
+        "Используй внутренний скрипт."
+      ]
+    }
+  }
+}

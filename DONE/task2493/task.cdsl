@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 249,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Drop me a call",
+      "description": [
+        "The layout designer has prepared a layout. It remains to add logic.",
+        "When pressing the dial buttons, the digit value must be added to the inner text of the `#entered-number` element.",
+        "Use the delegation technique.",
+        "Use the internal script."
+      ]
+    },
+    "ru": {
+      "title": "Позвони мне, позвони",
+      "description": [
+        "Верстальщик подготовил макет. Осталось добавить логики.",
+        "При нажатии на кнопки циферблата значение цифры должно добавлять во внутренний текст элемента `#entered-number`.",
+        "Используй прием делегирование.",
+        "Используй внутренний скрипт."
+      ]
+    }
+  }
+}

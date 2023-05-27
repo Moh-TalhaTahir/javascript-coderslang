@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 250,
+  "reward": 1,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Applying colors",
+      "description": [
+        "The document has already added a title and five colored button elements.",
+        "When you click on any of the buttons, the text color of the `h2` heading should change to the one indicated on the button. ",
+        "Add the `color` property through the `style` attribute to change the color.",
+        "Don't change any more styles; use the internal script."
+      ]
+    },
+    "ru": {
+      "title": "Применяя цвета",
+      "description": [
+        "В документе уже добавлен заголовок и пять элементов кнопок с цветами.",
+        "При нажатии на любую из кнопок, цвет текста заголовка `h2` должен меняться на указанный на кнопке.",
+        "Для изменения цвета добавь свойство `color` через атрибут `style`.",
+        "Больше никаких стилей не изменяй; используй внутренний скрипт."
+      ]
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "jsLectureId": 261,
+  "reward": 1,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "i18n": {
+    "en": {
+      "title": "Initial value",
+      "description": [
+        "You need to add initial values ​​to both fields in the document.",
+        "The first must be `John`, the second must be `Doe`."
+      ]
+    },
+    "ru": {
+      "title": "Начальное значение",
+      "description": [
+        "Нужно добавить обоим полям в документе начальные значения.",
+        "У первого значение должно быть `John`, у второго - `Doe`."
+      ]
+    }
+  }
+}

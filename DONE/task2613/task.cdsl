@@ -1,0 +1,31 @@
+{
+  "jsLectureId": 261,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Everything is intertwined",
+      "description": [
+        "Your colleague messed up everything with the inputs and labels.",
+        "Everything is not working as it should.",
+        "Radio buttons should only have one value.",
+        "Use the name `developer` for this.",
+        "You also need to properly bind labels to fields using the `front`, `back` and` full` identifiers."
+      ]
+    },
+    "ru": {
+      "title": "Все переплетено",
+      "description": [
+        "Твой коллега все напутал с полями и подписями к ним.",
+        "Все работает не так как надо.",
+        "У радио кнопок должно быть только одно значение.",
+        "Для этого используй имя `developer`.",
+        "Также надо правильно привязать подписи к полям с помощью идентификаторов `front`, `back` и `full`."
+      ]
+    }
+  }
+}

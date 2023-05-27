@@ -1,0 +1,62 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>Dial</title>
+    <style>
+      body {
+        display: grid;
+        height: 100vh;
+        place-items: center;;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(4, 100px);
+        gap: 8px;
+      }
+      .button {
+        background-color: #EDDFEF;
+        color: #464655;
+        font-size: 36px;
+        line-height: 100px;
+        text-align: center;
+        font-family: monospace;
+        cursor: pointer;
+      }
+      .button:last-child {
+        grid-column: 2 / span 1;
+      }
+      .pressed{
+        background-color: #D5CFE1;
+      }
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded",()=> {
+        const parent = document.querySelector('.container');
+        parent.addEventListener('click',(event) =>{
+          const button = event.target;
+          if(button.classList.contains('button')){
+            button.classList.add('pressed');
+            setTimeout(()=>{
+              button.classList.remove('pressed')
+            },500);
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="button">1</div>
+      <div class="button">2</div>
+      <div class="button">3</div>
+      <div class="button">4</div>
+      <div class="button">5</div>
+      <div class="button">6</div>
+      <div class="button">7</div>
+      <div class="button">8</div>
+      <div class="button">9</div>
+      <div class="button">0</div>
+    </div>
+  </body>
+</html>

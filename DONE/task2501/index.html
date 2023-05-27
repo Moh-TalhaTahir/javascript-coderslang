@@ -1,0 +1,46 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Colored header</title>
+      <style>
+        * {
+          font-family: monospace;
+          text-align: center;
+        }
+        .container {
+          display: grid;
+          gap: 8px;
+          grid-template-columns: repeat(5, 100px);
+          justify-content: center;
+        }
+        .color-button {
+          text-align: center;
+          font-size: 18px;
+          padding: 16px;
+          cursor: pointer;
+        }
+      </style>
+      <script>
+        document.addEventListener("DOMContentLoaded",()=>{
+          const colour = document.querySelector('.container');
+          colour.addEventListener('click',(event)=>{
+            const but = event.target;
+            const tag = document.querySelector("h2");
+            if( but.tagName === "DIV"){
+            tag.style.color = but.style.backgroundColor;
+            }
+          });
+        });
+      </script>
+    </head>
+    <body>
+      <h2>Change my color</h2>
+      <div class="container">
+        <div class="color-button" style="background-color: #C4D6B0;">#C4D6B0</div>
+        <div class="color-button" style="background-color: #477998; color: white">#477998</div>
+        <div class="color-button" style="background-color: #291F1E; color: white">#291F1E</div>
+        <div class="color-button" style="background-color: #F64740; color: white">#F64740</div>
+        <div class="color-button" style="background-color: #A3333D; color: white">#A3333D</div>
+      </div>
+    </body>
+  </html>

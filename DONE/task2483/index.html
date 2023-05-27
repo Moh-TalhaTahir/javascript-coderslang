@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Counter</title>
+    <style>
+      p{
+        font-size: 2rem;
+      }
+      button{
+        font-size: 2rem;
+      }
+    </style>
+        
+  </head>
+  <body>
+    <p>0</p>
+    <button id="minus">-</button>
+    <button id="plus">+</button>
+  </body>
+  <script>
+    var counter = 0;
+    var paragraph = document.querySelector("p");
+    var minusButton = document.querySelector("#minus");
+    var plusButton = document.querySelector("#plus");
+    minusButton.addEventListener("click", munisOne);
+    plusButton.addEventListener("click", plusOne);
+    function munisOne() {
+      counter--;
+      paragraph.innerHTML = counter;
+    }
+    function plusOne() {
+      counter++;
+      paragraph.innerHTML = counter;
+    }
+  </script>
+</html>

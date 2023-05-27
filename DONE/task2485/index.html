@@ -1,0 +1,37 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Text editor</title>
+  </head>
+  <body>
+    <p></p>
+  </body>
+  <script>
+    var lastParagrapf = document.querySelector("body>p");
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Enter") {
+        const p = document.createElement("p");
+        document.querySelector("body").append(p);
+        lastParagrapf = p;
+      } else if (
+        event.key === "Shift" ||
+        event.key === "Alt" ||
+        event.key === "Control" ||
+        event.key === "Ctrl"
+      ) {
+      } else if (event.key === "Backspace") {
+        var text = lastParagrapf.innerHTML;
+        text = text.slice(0, -1);
+        lastParagrapf.innerHTML = text;
+        if (text.length == 0) {
+          lastParagrapf.remove();
+          lastParagrapf = document.querySelector("p:last-of-type");
+        }
+      } else {
+        lastParagrapf.innerHTML += "" + event.key;
+      }
+    });
+  </script>
+</html>

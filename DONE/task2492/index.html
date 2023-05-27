@@ -1,0 +1,49 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>Table of contents</title>
+  </head>
+  <body>
+    <h2>Very interesting book</h2>
+    <ul>
+      <li class="chapter" id="chapter1">
+        Chapter 1: Introduction
+        <ul>
+          <li class="section" id="section1-chapter1">
+            Section 1: Background
+          </li>
+          <li class="section" id="section2-chapter1">
+            Section 2: Methods
+          </li>
+        </ul>
+      </li>
+      <li class="chapter" id="chapter2">
+        Chapter 2: Main
+        <ul>
+          <li class="section"  id="section1-chapter2">
+            Section 1: Results
+          </li>
+          <li class="section"  id="section2-chapter2">
+            Section 2: Discussion
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <script>
+      const chapters = document.querySelectorAll('.chapter');
+      const sections = document.querySelectorAll('.section');
+
+      for (let chapter of chapters) {
+        chapter.addEventListener('click', e => {
+          console.log('Chapter details: ' + e.currentTarget.id);
+        });
+      }
+
+      for (let section of sections) {
+        section.addEventListener('click', e => {
+          console.log('Section details: ' + e.currentTarget.id);
+        });
+      }
+    </script>
+  </body>
+</html>

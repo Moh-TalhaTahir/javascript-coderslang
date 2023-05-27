@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CoderslangJS click counter</title>
+    <script>
+      document.addEventListener("DOMContentLoaded",() =>{
+        const result = document.getElementById('clicks');
+        const incbutton = document.querySelector('body>button');
+        const resbutton = document.querySelector('button+button');
+        var counter = 0;
+        incbutton.addEventListener("click",() =>{
+          result.innerHTML = ++counter;
+        });
+        resbutton.addEventListener("click",() =>{
+          counter = 0;
+          result.innerHTML = counter;
+        });
+      })
+    </script>
+</head>
+<body>
+<h3>CLICKS:</h3>
+<p id="clicks">0</p>
+<button type="button" id="incrementCounterButton" onClick="handleButtonClick()">Click me</button>
+<button type="button" id="resetCounterButton" onClick="resetCounter()">Reset</button>
+</body>
+
+</html>

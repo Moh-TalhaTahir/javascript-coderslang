@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const element = document.querySelector('#click-target');
+      element.addEventListener('click', (event) => {
+        console.log('click-target');
+      });
+
+      const parents = document.querySelectorAll('div[id^="parent-"]');
+      parents.forEach((parent) => {
+        parent.addEventListener('click', (event) => {
+          console.log(parent.id);
+        }, { capture: true });
+      });
+    });
+  </script>
+  <body>
+    <div id="parent-1">
+      <div id="parent-2">
+        <div id="parent-3">
+          <button id="click-target">Click me</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

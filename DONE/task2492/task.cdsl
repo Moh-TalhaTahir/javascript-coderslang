@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 249,
+  "reward": 1,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "No bubbling",
+      "description": [
+        "Your colleague started writing handlers.",
+        "But the handler for the `.chapter` element does not fire when clicking on nested `.section` elements.",
+        "But should. Help your colleague figure it out.",
+        "You just need to fix one line in the script, don't change anything else."
+      ]
+    },
+    "ru": {
+      "title": "Не всплывает",
+      "description": [
+        "Твой коллега начал писать обработчики.",
+        "Но обработчик элементом `.chapter` не срабатыает при нажатии на вложенные элементы `.section`.",
+        "А должен. Помоги колеге разобраться.",
+        "Исправить нужно всего лишь одну строчку в скрпите, больше ничего не изменяй."
+      ]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "jsLectureId": 249,
+  "reward": 3,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Operation \"Interception\"",
+      "description": [
+        "Each element in the `index.html` file needs to add a click handler.",
+        "The handler should print the element's `id` to the console.",
+        "As a result, when you press the `Click me` button, 4 messages should appear in the console.",
+        "But their order should be like this: `parent-1`, `parent-2`,` parent-3`, `click-target`.",
+        "Use the internal script."
+      ]
+    },
+    "ru": {
+      "title": "Операция \"Перехват\"",
+      "description": [
+        "Каждому элементу в `index.html` файле нужно добавить обработчик нажатия.",
+        "Обработчик должен выводить в консоль `id` элемента.",
+        "В итоге при нажатии на кнопку `Click me` в консоли должно появится 4 сообщения.",
+        "Но их порядок должен быть таким: `parent-1`, `parent-2`, `parent-3`, `click-target`.",
+        "Используй внутренний скрипт."
+      ]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "jsLectureId": 250,
+  "reward": 3,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "A bit of UX",
+      "description": [
+        "When dialing a number, it is desirable to highlight the pressed button.",
+        "When clicking on any button in the` index.html` file, the `pressed` class must be added to it for 500ms.",
+        "This class should change the` background-color` property to `#D5CFE1`.",
+        "After 500ms, the class must be removed for the color to return to its original position.",
+        "Use internal styles and script."
+      ]
+    },
+    "ru": {
+      "title": "Немного UX",
+      "description": [
+        "При наборе номера желательно подсвечивать нажатую кнопку.",
+        "При нажатии на любую кнопку в файле `index.html` ей на 500мс должен добавляться класс `pressed`.",
+        "Это класс должен менять свойство `background-color` на `#D5CFE1`.",
+        "По истечении 500мс класс должен удалится, что бы цвет вернулся в свое исходное положение.",
+        "Используй внутренние стили и скрипт."
+      ]
+    }
+  }
+}

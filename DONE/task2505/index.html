@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Traffic light</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 250px);
+        place-items: center;
+      }
+      .traffic-light {
+        width: 200px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #464655;
+      }
+      .light {
+        border-radius: 50%;
+        width: 180px;
+        height: 180px;
+      }
+      .togglers {
+        height: 400px;
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+      }
+      .toggler {
+        margin-bottom: 8px;
+      }
+      .red-light {
+        background-color: #794442;
+      }
+      .green-light {
+        background-color: #82926b;
+      }
+      .traffic-light.stop .red-light {
+        background-color: #DB3A34;
+      }
+      .traffic-light.go .green-light {
+        background-color: #ADE25D;
+      }
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const toggleFirstBtn = document.getElementById("toggle-first");
+        const toggleSecondBtn = document.getElementById("toggle-second");
+        const toggleBothGoBtn = document.getElementById("toggle-both-go");
+        const toggleBothStopBtn = document.getElementById("toggle-both-stop");
+        const firstTrafficLight = document.querySelector(".container .traffic-light.stop");
+        const secondTrafficLight = document.querySelector(".container .traffic-light.go");
+
+        toggleFirstBtn.addEventListener("click", () => {
+          firstTrafficLight.classList.toggle("go");
+          firstTrafficLight.classList.toggle("stop");
+        });
+
+        toggleSecondBtn.addEventListener("click", () => {
+          secondTrafficLight.classList.toggle("go");
+          secondTrafficLight.classList.toggle("stop");
+        });
+
+        toggleBothGoBtn.addEventListener("click", () => {
+          firstTrafficLight.classList.add("go");
+          secondTrafficLight.classList.add("go");
+          firstTrafficLight.classList.remove("stop");
+          secondTrafficLight.classList.remove("stop");
+        });
+
+        toggleBothStopBtn.addEventListener("click", () => {
+          firstTrafficLight.classList.remove("go");
+          secondTrafficLight.classList.remove("go");
+          firstTrafficLight.classList.add("stop");
+          secondTrafficLight.classList.add("stop");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="traffic-light stop">
+        <div class="light red-light"></div>
+        <div class="light green-light"></div>
+      </div>
+      <div class="traffic-light go">
+        <div class="light red-light"></div>
+        <div class="light green-light"></div>
+      </div>
+      <div class="togglers">
+        <button class="toggler" id="toggle-first">Toggle first</button>
+        <button class="toggler" id="toggle-second">Toggle second</button>
+        <button class="toggler" id="toggle-both-go">Toggle both on go</button>
+        <button class="toggler" id="toggle-both-stop">Toggle both on stop</button>
+      </div>
+    </div>
+  </body>
+</html>

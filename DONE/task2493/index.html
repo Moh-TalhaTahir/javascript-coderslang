@@ -1,0 +1,66 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>Dial</title>
+    <style>
+      * {
+        font-family: monospace;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      #entered-number {
+        font-size: 18px;
+        height: 24px;
+        line-height: 24px;
+        margin-bottom: 0.83em;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 30px);
+        grid-template-rows: repeat(4, 30px);
+        gap: 8px;
+      }
+      .button {
+        background-color: rgb(255, 198, 0);
+        color: white;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+      }
+      .button:last-child {
+        grid-column: 2 / span 1;
+      }
+    </style>
+  </head>
+  <script>
+    document.addEventListener("DOMContentLoaded",() =>{
+      const div = document.querySelector(".container");
+      div.addEventListener("click",(event) =>{
+        const button = event.target;
+        if( button.className === "button"){
+          document.querySelector("#entered-number").innerHTML += button.innerHTML;
+        }
+      })
+    });
+  </script>
+  <body>
+    <h2>Phone number</h2>
+    <div id="entered-number"></div>
+    <div class="container">
+      <div class="button">1</div>
+      <div class="button">2</div>
+      <div class="button">3</div>
+      <div class="button">4</div>
+      <div class="button">5</div>
+      <div class="button">6</div>
+      <div class="button">7</div>
+      <div class="button">8</div>
+      <div class="button">9</div>
+      <div class="button">0</div>
+    </div>
+    
+  </body>
+</html>

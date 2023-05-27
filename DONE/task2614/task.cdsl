@@ -1,0 +1,83 @@
+{
+  "jsLectureId": 261,
+  "reward": 1,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "On the way to Google",
+      "description": [
+        "Let's make a simple copy of the Google input field.",
+        "Let's take a look at one of the ways to add icons to fields.",
+        "Use internal styles."
+      ],
+      "final": [
+        "Super, even the google devs couldn't have done better!"
+      ],
+      "stages": {
+        "1": [
+          "Immediately after the `div.header` element, add the `form` tag.",
+          "There must be one element inside the form - the `div` tag with the `input-wrapper` class.",
+          "Inside the `.input-wrapper`, you first need to add a magnifying glass picture (`search.png`).",
+          "Then the input field will go directly.",
+          "There should be a microphone picture (`microphone.svg`) after the input field.",
+          "Let's add the styles for the pictures right away - the maximum width and height of each one should be `24px`."
+        ],
+        "2": [
+          "Now we will work on the styles of our input field. Let's start with its wrapper.",
+          "Let's make `div.input-wrapper` a flex container.",
+          "The element must be in line and vertically centered.",
+          "The height should be `44px`; the width should be `484px`; the edges are rounded with a radius of `24px`.",
+          "The wrapper must have a solid `1px` border with the color `#dfe1e5`.",
+          "The wrapper must have a vertical padding of `4px` and a horizontal padding of `14px`",
+          "Remember to change `box-sizing` to `border-box`."
+        ],
+        "3": [
+          "Let's finish styling the field itself. We need to remove the borders and highlight the field.",
+          "Height should be `34px`, font size should be `16px`.",
+          "We will only add horizontal margins - `8px`.",
+          "Since this is a flex item, let's make it take up all the free space."
+        ]
+      }
+    },
+    "ru": {
+      "title": "На пути в Google",
+      "description": [
+        "Сделаем простую копию поля ввода Google.",
+        "За одно рассмотрим один из способов добавления иконок полям.",
+        "Используй внутренние стили."
+      ],
+      "final": [
+        "Супер, даже разработчики Google не справились бы лучше!"
+      ],
+      "stages": {
+        "1": [
+          "Сразу после элемента `div.header` добавь тег `form`.",
+          "Внутри форму должен быть один элемент - тег `div` с классом `input-wrapper`.",
+          "Внутри `.input-wrapper` сначала надо добавить картинку лупы (`search.png`).",
+          "Затем будет идти непосредственно поле ввода.",
+          "После поля ввода должна быть картинка микрофона (`microphone.svg`).",
+          "Сразу добавим стили для картинок - максимальная ширина и высота каждой должны быть `24px`."
+        ],
+        "2": [
+          "Теперь поработаем над стилями нашего поля ввода. А начнем с его обертки.",
+          "Давай сделаем `div.input-wrapper` flex-контейнером.",
+          "Элемента должны располагаться в строку и по вертикали должны быть отцентрированы.",
+          "Высота должна быть `44px`; ширина - `484px`; края скруглены в с радиусом `24px`.",
+          "У обертки должна быть сплошная граница толщиной `1px` и цветом `#dfe1e5`.",
+          "У обертки должны быть вертикальные отступы `4px` и горизонтальные `14px`",
+          "Не забудь поменять `box-sizing` на `border-box`."
+        ],
+        "3": [
+          "Закончим стилизаций самого поля. У него надо убрать границы и убрать подсветку.",
+          "Высота должна быть `34px`, размер шрифта - `16px`.",
+          "Отступы добавим только горизонтальные - `8px`.",
+          "Поскольку это flex элемент, давай сделаем так, что бы он занимал все свободное пространство."
+        ]
+      }
+    }
+  }
+}

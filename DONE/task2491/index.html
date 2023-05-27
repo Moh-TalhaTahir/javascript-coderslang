@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Seasons</title>
+    <style>
+      * {
+        font-family: monospace;
+      }
+      h2 {
+        text-align: center;
+      }
+      ul {
+        display: grid;
+        list-style: none;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+      }
+      li {
+        background-color: rgb(255, 198, 0);
+        padding: 16px 8px;
+        color: white;
+        width: 200px;
+        text-align: center;
+        font-size: 16px;
+      }
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded",() =>{
+        const element = document.querySelector('ul');
+        element.addEventListener("click",() =>{
+          console.log('Updated');
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <h2>Seasons</h2>
+    <ul>
+      <li onclick="console.log('Winter selected')">Winter</li>
+      <li onclick="console.log('Spring selected')">Spring</li>
+      <li onclick="console.log('Summer selected')">Summer</li>
+      <li onclick="console.log('Autumn selected')">Autumn</li>
+    </ul>
+  </body>
+</html>

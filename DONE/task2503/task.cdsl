@@ -1,0 +1,31 @@
+{
+  "jsLectureId": 250,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Fortune cookies",
+      "description": [
+        "There are three fortune cookies (`.cookie`) in the document.",
+        "To read the prediction, you need to open the cookie.",
+        "When you click on a `.cookie`, you need to add the `opened` class to it.",
+        "The `opened` class should change the `background-color` property to `#AAFCB8` and color to `#480355`.",
+        "Use internal styles from the script."
+      ]
+    },
+    "ru": {
+      "title": "Печеньки с предсказаниями",
+      "description": [
+        "В документе есть три печеньки с предсказаниями (`.cookie`).",
+        "Что бы прочесть предсказание, надо печенье открыть.",
+        "При нажатии на `.cookie` надо добавлять ей класс `opened`.",
+        "Класс `opened` должен менять свойство `background-color` на `#AAFCB8`, а color - на `#480355`.",
+        "Используй внутренние стили с скрипт."
+      ]
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "jsLectureId": 250,
+  "reward": 4,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Traffic light",
+      "description": [
+        "You were given access to control traffic lights in the city.",
+        "The task you need to solve is to manually control them.",
+        "",
+        "To turn on the red light, the `.traffic-light` element must have a second class `stop`.",
+        "To turn green light on, the `.traffic-light` element must have a second `go` class.",
+        "",
+        "The first `toggler` button (with `id` `toggle-first`) should switch the mode of the first traffic light (`.traffic-light`).",
+        "The second `toggler` button (with `id` `toggle-second`) should switch the mode of the second traffic light (`.traffic-light`).",
+        "",
+        "The third button (`toggle-both-go`) must turn green at both traffic lights. ",
+        "The fourth button (`toggle-both-stop`) must turn on the red light at both traffic lights.",
+        "",
+        "Use the internal script, don't change the initial state of the classes."
+      ]
+    },
+    "ru": {
+      "title": "Светофор",
+      "description": [
+        "Тебе дали доступ в управлению светофорами в городе.",
+        "Задача, которую тебе нужно решить, это ручное управление ими.",
+        "",
+        "Для включения красного света - у элемента `traffic-light` должен быть второй класс `stop`.",
+        "Для включения зеленого света - у элемента `traffic-light` должен быть второй класс `go`.",
+        "",
+        "Первая кнопка `toggler` (с `id` `toggle-first`) должна переключить режим первого светофора (`.traffic-light`).",
+        "Вторая кнопка `toggler` (с `id` `toggle-second`) должна переключить режим второго светофора (`.traffic-light`).",
+        "",
+        "Третья кнопка (`toggle-both-go`) должна включать зеленый свет на обоих светофорах.",
+        "Четвертая кнопка (`toggle-both-stop`) должна включать красный свет на обоих светофорах.",
+        "",
+        "Используй внутренний скрипт, не изменяй начальное состояние классов."
+      ]
+    }
+  }
+}

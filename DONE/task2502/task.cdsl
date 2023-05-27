@@ -1,0 +1,41 @@
+{
+  "jsLectureId": 250,
+  "reward": 1,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Change the font size on button click",
+      "description": [
+        "There are two buttons in the document: `+` and `-`.",
+        "",
+        "When the `+` button is clicked, the font size of the `.story` element should increase by `1px` by default.",
+        "If the current font size of the `.story` element is equal to or greater than `20px`, it must increase by `2px`.",
+        "",
+        "When you click on the` 0` button, the font size of the `.story` element should decrease by `1px` by default.",
+        "If the current font size of the `.story` element is equal to or greater than `20px`, it should decrease by `2px`.",
+        "",
+        "Use the internal script.",
+        "Use `getComputedStyle` to get current size of the element."
+      ]
+    },
+    "ru": {
+      "title": "Изменяем размер шрифта по клику",
+      "description": [
+        "В документе есть две кнопки: `+` и `-`.",
+        "",
+        "При нажатии на кнопку `+` размер шрифта элемента `.story` должен увеличиваться на `1px` по умолчанию.",
+        "Если текущий размер шрифта элемента `.story` равен или больше `20px` - он должен увеличиваться на `2px`.",
+        "",
+        "При нажатии на кнопку `-` размер шрифта элемента `.story` должен уменьшаться на `1px` по умолчанию.",
+        "Если текущий размер шрифта элемента `.story` равен или больше `20px` - он должен уменьшаться на `2px`.",
+        "",
+        "Используй внутренний скрипт",
+        "Используй `getComputedStyle`, чтобы получить текущий размер элемента."
+      ]
+    }
+  }
+}

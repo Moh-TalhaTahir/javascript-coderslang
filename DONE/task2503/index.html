@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fortune cookies</title>
+    <style>
+      * {
+        font-family: monospace;
+      }
+      h2 {
+        text-align: center;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+      }
+      .cookie {
+        margin: 16px;
+        cursor: pointer;
+        background-color: #285943;
+        color: #285943;
+        padding: 20px;
+      }
+      .opened{
+        background-color:#AAFCB8 ;
+        color:#480355;
+      }
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded",()=>{
+        const cookies = document.querySelector('.container');
+        cookies.addEventListener('click',(event) =>{
+          const cookie = event.target;
+          if(cookie.classList.contains('cookie')){
+            cookie.classList.add('opened');
+          }
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <h2>Open your fortune cookie</h2>
+    <div class="container">
+      <div class="cookie">Never do anything halfway</div>
+      <div class="cookie">Run</div>
+      <div class="cookie">Someone in your life need a letter from you</div>
+    </div>
+  </body>
+</html>

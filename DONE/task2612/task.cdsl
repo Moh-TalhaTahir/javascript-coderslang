@@ -1,0 +1,35 @@
+{
+  "jsLectureId": 261,
+  "reward": 1,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Stacked Form",
+      "description": [
+        "The form must be stacked.",
+        "For this, the input fields must become block.",
+        "The width of each field must be 100% of the parent element (the `form` tag).",
+        "Note that the form has `padding`.",
+        "Also, each input field needs to add a `label` with the text color `#7A6174`.",
+        "The `label` tags must be anchored using the identifiers `firstName` and `lastName`.",
+        "The text of the first `label` should be `First Name`, the second - `Last Name`."
+      ]
+    },
+    "ru": {
+      "title": "Вертикальная форма",
+      "description": [
+        "Форма должна быть вертикальной.",
+        "Для этого поля ввода должны стать блочными.",
+        "Ширина каждого поля должна занимать 100% родительского элемента (тега `form`).",
+        "Учти, что у формы есть `padding`.",
+        "Также каждому полю ввода нужно добавить `label` с цветом текста `#7A6174`.",
+        "Теги `label` должны быть привязаны с помощью идентификаторов `firstName` и `lastName`.",
+        "Текст первого `label` должен быть `First Name`, второго - `Last Name`."
+      ]
+    }
+  }
+}

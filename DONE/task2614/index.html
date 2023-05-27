@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My google input</title>
+    <style>
+      @font-face {
+          font-family: OpenSans;
+          font-weight: 600;
+          font-style: italic;
+          src: url("fonts/OpenSans-SemiBold.ttf") format('truetype');
+      }
+      body {
+        margin: 0;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        padding-top: 60px;
+        box-sizing: border-box;
+      }
+      .header {
+        font-family: OpenSans, serif;
+        font-size: 5rem;
+        letter-spacing: -10px;
+        margin-bottom: 25px;
+      }
+      .word-end {
+        margin-right: 16px;
+      }
+      .blue {
+        color: #4284F3;
+      }
+      .red {
+        color: #EA4435;
+      }
+      .yellow {
+        color: #FBBD03;
+      }
+      .green {
+        color: #33A852;
+      }
+      .not-colored {
+        color: #0B3954;
+      }
+      img{
+        max-width: 24px;
+         max-height:24px;
+      }
+      .input-wrapper{
+        display: flex;
+        align-items:center;
+        height: 44px;
+        width: 484px;
+        border-radius: 24px;
+        border:1px solid #dfe1e5;
+        padding:4px 14px;
+        box-sizing: border-box;
+      }
+      input{
+        border: none;
+        flex: 1;
+        height: 34px;
+        font-size: 16px;
+        padding: 0px 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <span class="not-colored">M</span>
+        <span class="not-colored word-end">y</span>
+        <span class="blue">G</span>
+        <span class="red">o</span>
+        <span class="yellow">o</span>
+        <span class="blue">g</span>
+        <span class="green">l</span>
+        <span class="red word-end">e</span>
+        <span class="not-colored">I</span>
+        <span class="not-colored">n</span>
+        <span class="not-colored">p</span>
+        <span class="not-colored">u</span>
+        <span class="not-colored">t</span>
+      </div>
+      <form>
+        <div class="input-wrapper">
+           <img src="./images/search.png" alt="search icon" >
+          <input type="text">
+          <img src="./images/microphone.svg">
+        </div>
+        </form>
+    </div>
+  </body>
+</html>
