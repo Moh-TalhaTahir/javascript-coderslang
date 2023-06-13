@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <style>
+      * {
+        font-family: monospace;
+      }
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #706993;
+        display: grid;
+        place-items: center;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 360px;
+        padding: 32px;
+        box-sizing: border-box;
+      }
+      input,
+      button {
+        padding: 15px;
+        font-size: 14px;
+        border: none;
+      }
+      input {
+        outline: none;
+        background-color: #f2f2f2;
+        margin-bottom: 16px;
+      }
+      button {
+        color: white;
+        background-color: #331E38;
+      }
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const form = document.forms[0];
+        const email = form.elements.email;
+        const password = form.querySelector('input[type="password"]');
+        const loginButton = document.querySelector('button');
+
+        form.addEventListener('input', (event) => {
+          const isEmailValid = email.value.length > 4;
+          const isPasswordValid = password.value.length > 4;
+
+          if (isEmailValid && isPasswordValid) {
+            loginButton.style.backgroundColor = "#90E39A";
+          } else {
+            loginButton.style.backgroundColor = "#331E38";
+          }
+
+          if (!isEmailValid) {
+            loginButton.style.backgroundColor = "#331E38";
+          }
+
+          if (!isPasswordValid) {
+            loginButton.style.backgroundColor = "#331E38";
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <form>
+      <input type="text" name="email" placeholder="email">
+      <input type="password" placeholder="password">
+      <button>LOGIN</button>
+    </form>
+  </body>
+</html>

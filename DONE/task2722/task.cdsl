@@ -1,0 +1,35 @@
+{
+  "jsLectureId": 272,
+  "reward": 1,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Transitions",
+      "description": [
+        "Let's practice transitions of css property values.",
+        "For `div.box` element, the following changes should occur on hover: ",
+        "- width should be` 400px`, transition delay `1s`, duration -` 4s`; ",
+        "- height should be` 400px`, transition delay is `2s`, duration -` 4s`; ",
+        "- the corners should become `50%` rounded, transition delay `2s`, duration - `4s`;",
+        "- background color should be `#861657`, transition delay should not be, duration should be `4s`.",
+        "Use separate properties to add transitions; the order is the same as in the list above."
+      ]
+    },
+    "ru": {
+      "title": "Переходы",
+      "description": [
+        "Потренируемся с переходами значений css свойств.",
+        "Для элемента `div.box` при наведение должны происходить следующие изменения:",
+        "  - ширина должна стать `400px`, задержка перехода `1s`, длительность - `4s`;",
+        "  - высота должна стать `400px`, задержка перехода `2s`, длительность - `4s`;",
+        "  - углы должны стать скруглены на `50%`, задержка перехода `2s`, длительность - `4s`;",
+        "  - цвет заднего фона должен стать `#861657`, задержка перехода не должно быть, длительность - `4s`.",
+        "Для добавления переходов используй отдельные свойства; порядок при перечислении такой же, как в списке выше."
+      ]
+    }
+  }
+}

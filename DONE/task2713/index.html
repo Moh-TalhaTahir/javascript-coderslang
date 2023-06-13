@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rotate</title>
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #9CFC97;
+            position: relative;
+        }
+        button {
+            margin: 20px;
+        }
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded",()=>{
+        const body = document.querySelector('body');
+        var rotationAngle = 0;
+        body.addEventListener('click',(event)=>{
+          if(event.target.id === "left"){
+            rotationAngle -= 30;
+          document.querySelector('.box').style.transform = `rotate(${rotationAngle}deg)`;
+          }
+          if(event.target.id === "right"){
+           rotationAngle += 30;
+          document.querySelector('.box').style.transform = `rotate(${rotationAngle}deg)`;
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button class="rotate-left" id="left">-30 deg</button>
+    <div class="box"></div>
+    <button class="rotate-right" id="right">+30 deg</button>
+  </body>
+</html>

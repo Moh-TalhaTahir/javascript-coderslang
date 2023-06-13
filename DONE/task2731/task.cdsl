@@ -1,0 +1,383 @@
+{
+  "jsLectureId": 273,
+  "reward": 30,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Memory training",
+      "description": [
+        "We will develop a small game. You must have played this one at least once.",
+        "Turning over two cards on the field, you need to find all the pairs of pictures.",
+        "Hurry to get to work!"
+      ],
+      "final": [
+        "Great! The first JS game has been written!",
+        "You can try to improve it yourself. For example, show the game time.",
+        "Or add more cards. Good luck!"
+      ],
+      "stages": {
+        "1": [
+          "Let's write the basic markup and styles right away.",
+          "First, we will remove the outer margin of the `body` tag and make it fit the entire screen.",
+          "Child elements of` body` must be centered (use `grid` for this).",
+          "`body`'s background should be `#938BA1`.",
+          "All elements must have the following fonts - `Cambria, Cochin, Georgia, Times, 'Times New Roman', serif`.",
+          "Inside the `body` tag, there must be one `main` tag with one `section`.",
+          "`section` must consist of `header` and one `div` with `field` class."
+        ],
+        "2": [
+          "`div.field` will be our playground. Let's style it.",
+          "The field will consist of 4 identical lines (use `grid`).",
+          "The distance between grid items should be `20px`, as well as between items and the field border.",
+          "The edges of the field will be rounded with a radius of `10px`, the background is `#424B54`.",
+          "",
+          "Inside the `header`, add the `h1` header with the `Memory Game` text.",
+          "The title text should be centered, the font size should be `2rem`, and the margin under the title should be `10px`."
+        ],
+        "3": [
+          "Let's add naga game cards inside the `div.field` element.",
+          "There should be 16 cards, all created using the `div` tag with the `card` class.",
+          "",
+          "Our cards must be turned over, so they must consist of two parts.",
+          "For proper flipping animation, add a `div.card-inner` element inside the `div.card`.",
+          "And already inside `div.card-inner` there are two sides - `div.card-front` and` div.card-back`. ",
+          "",
+          "We will use emoji for images on cards.",
+          "To make it easier to compare cards in the future, let's add a `type` attribute to each.",
+          "We will use the following emoji - `129409`, `9917`, `127758`, `127790`, `127789`, `127823`, `127844`, `127849`.",
+          "There should be two of each - list each pair in the order above.",
+          "",
+          "We will display emoji on the back of the card.",
+          "To do this, for each card, you need to repeat the emoji code inside the` div.card-bac` element. ",
+          "Just remember to add `&#` first, and `;` at the end."
+        ],
+        "4": [
+          "We need to style our cards. Each one should be a `16vh` square.",
+          "Since we will click on each one,` cursor` should be `pointer`.",
+          "The font size (which indicates the size of the emoji) should be `10vh`.",
+          "Remember to specify the perspective depth for transformations. Let's say `1000px`.",
+          "",
+          "The size of the `.card-inner` must be the same size as the parent.",
+          "The positioning of the element must be relative to the starting position.",
+          "The `transform-style` property must be equal to `preserve-3d`.",
+          "And let's add a transition for the `transform` property with a duration of `0.6s`."
+        ],
+        "5": [
+          "Moving on to the sides of the card. Each must be the same size as the parent.",
+          "They must be absolutely positioned and the back of each must be hidden.",
+          "The background color of each side is `#F7D002`, and the corners are rounded by `10px`.",
+          "",
+          "The emoji on the back should be placed in the middle (use `grid` for this).",
+          "Immediately rotate the back side 180 degrees around the Y-axis."
+        ],
+        "6": [
+          "Let's write a little script. The scripts will be written in the file `script.js`.",
+          "Let's add a handler for clicking on cards in the file.",
+          "When clicked, we must add the `opened` class to the card.",
+          "The `.card.opened` element must have its `.card-inner` child rotated 180 degrees around the Y-axis.",
+          "",
+          "Don't forget to include the script."
+        ],
+        "7": [
+          "Let's add the `init` function in the script (all functions must be added by the function declaration).",
+          "We will use this function to initialize a new game.",
+          "",
+          "Let's also add three variables:",
+          " - `opened` - an empty array where maps opened for comparison will be stored; ",
+          " - `matched` - initial value `0`, the number of cards that matched;",
+          " - `moves` - initial value `0`, the number of steps taken.",
+          "",
+          "The `init` function should reset the value of the `matched` and` moves` variables to `0`.",
+          "",
+          "The `init` function must be called immediately in `script.js`."
+        ],
+        "8": [
+          "Each time the game is initiated, the cards must be shuffled.",
+          "Let's add the `shuffle` function for this.",
+          "This function should only take one argument, an array.",
+          "The function should return a new array of mixed elements of the input array.",
+          "",
+          "The `shuffle` function must be called inside the `init` function.",
+          "The argument for the call must be an array created from the list of `.card` nodes. ",
+          "",
+          "Each element of the resulting array must be added to the `.field` element."
+        ],
+        "9": [
+          "We will use the variable `moves` to count the steps. ",
+          "We will also show this amount to the player.",
+          "",
+          "To do this, add a `div.moves-counter` element after the `h1` heading.",
+          "The text will be shown inside this element:` Moves: <amount> `",
+          "Instead of `<amount> `, we will display the number of steps wrapped in a `span` tag.",
+          "Initially we will show `0`.",
+          "From the styles for` .moves-counter`, add only the bottom margin of `10px`.",
+          "",
+          "Let's also add the `addMove` function to the script.",
+          "It should increment the value of the variable `moves` by `1`.",
+          "Also, the text inside the `.moves-counter span` should change to the new value for `moves`."
+        ],
+        "10": [
+          "At the end of the game, we will show a modal window.",
+          "Add a` div.modal` element after the `main` tag, but before the` script` tag. ",
+          "The modal consists of two parts: overlay (` div.overlay`) and content (`div.content`).",
+          "The content should be in three parts:",
+          " - header - `h2.congratulation-header` with the `Congratulations` text;",
+          " - messages - `div.congratulation-message` with the `You did 0 step (s) to win! Can you do better?` text;",
+          " `0` must be surrounded by a `span` tag.",
+          " - buttons - `button#try-again` with the text `Try again`."
+        ],
+        "11": [
+          "Styling our modal. Initially,` .modal` should not be displayed. ",
+          "And its dimensions should be equal to those of the screen.",
+          "The position is fixed to fill the entire screen.",
+          "",
+          "The overlay should create a darkening effect.",
+          "Therefore, the `div.overlay` must be absolutely positioned and the same size as the parent.",
+          "Background - `#424B54`, transparency - `0.2`.",
+          "Also add a `z-index` of 1 (so the padding is on top of other elements)."
+        ],
+        "12": [
+          "`div.content` must be absolutely positioned.",
+          "From the top, the element should move by `10vh`, to the left - `5vw`.",
+          "Width should be `90vw`, `z-index` should be 2 (to be on top of the overlay).",
+          "Background color is `white`, corners are rounded by `10px`.",
+          "",
+          "The modal title text should be centered like the message text.",
+          "The bottom margin of the message (`.congratulation-message`) must be` 20px`. ",
+          "The message font size is` 1.1rem`. "
+        ],
+        "13": [
+          "The `#try-again` button needs to be made a block element in order to add fields to it.",
+          "Top should be` 0px`, bottom should be `20px`, sides should be` auto` (to center).",
+          "The `border` and `outline` properties of the button must be` none`. ",
+          "Font size is `1.1rem`, vertical padding is `8px`, horizontal padding is` 16px`.",
+          "The corners are rounded - `4px`, and the cursor is `pointer`.",
+          "The background is `#938BA1` and the text color is `white`."
+        ],
+        "14": [
+          "Let's add a `showModal` function that will show the modal window.",
+          "The function should replace the inner text of the `.congratulation-message span` with the value of the variable `moves`.",
+          "To display the modal, add the `display` style with the value `block`.",
+          "",
+          "And we will modify the `init` function. It should change the text of the `.moves-counter span` to the value of `moves`. ",
+          "And for `.modal`, the `display` property should change to `none`.",
+          "",
+          "The `init` function, by the way, needs to be called when the `#try-again` button is pressed."
+        ],
+        "15": [
+          "Now we will write the logic of the course of the game and its completion.",
+          "When you click on the jacket, it should be added to the `opened` array.",
+          "And the `addMove` function should be called immediately.",
+          "",
+          "When the `opened` array has two elements, all checks must be done.",
+          "If the cards do not match, they must be hidden back in 1 second.",
+          "After one second, each element in the` opened` array needs to be removed from the `opened` class.",
+          "Well, the array should be zeroed.",
+          "",
+          "Well, while we are waiting for this second (while there are two elements in the array), clicking on the cards should not do anything."
+        ],
+        "16": [
+          "If two elements of the `opened` array have the same `type` attributes - the player has opened two identical cards.",
+          "Then each one needs to add a `match` class - it should do the same as the `opened` class.",
+          "And the value of the `matched` variable should grow by `2`.",
+          "",
+          "When `matched` is 16, it means that all cards are face up and the game is over.",
+          "So we need to call the `showModal` function, which will show the player the result of the game.",
+          "",
+          "The player can start a new game. To do this, the cards must be hidden.",
+          "The init function should remove the match class from all `.card` elements."
+        ]
+      }
+    },
+    "ru": {
+      "title": "Тренировка памяти",
+      "description": [
+        "Разработаем небольшую игру. Ты наверняка в такую хоть раз да и играл.",
+        "Переворачивая по две карточки на поле нужно найти все пары картинок.",
+        "Скорее приступим к работе!"
+      ],
+      "final": [
+        "Отлично! Первая JS игра написана!",
+        "Можешь попробовать ее самостоятельно улучшить. Например, показывать игровое время.",
+        "Ну или добавить еще карточек. Удачи!"
+      ],
+      "stages": {
+        "1": [
+          "Сразу напишем базовую разметку и стили.",
+          "Для начала у тега `body` уберем внешний поля и сделаем высотой на весь экран.",
+          "Дочерние элементы `body` должны размещаться по середине (используй `grid` для этого).",
+          "Задний фон `body` должен быть #938BA1`.",
+          "Для всех элементов шрифты должны быть следующие - `Cambria, Cochin, Georgia, Times, 'Times New Roman', serif`.",
+          "Внутри тега `body` должен быть один тег `main` с одной секцией `section`.",
+          "`section` должен состоять из `header` и одного `div` с классом `field`."
+        ],
+        "2": [
+          "`div.field` будет нашим игровым полем. Давай добавим ему стили.",
+          "Поле будет состоять из 4 одинаковых строк (используй `grid`).",
+          "Между элементами сетки расстояние должно быть `20px`, как и между элементами и краями поля.",
+          "Края поля пусть будут скруглены радиусом `10px`, задний фон `#424B54`.",
+          "",
+          "Внутри `header` нужно добавить заголовок `h1` с текстом `Memory Game`.",
+          "Текст заголовка должен быть выровнен по середине, размер шрифта - `2rem`, поле под заголовком - `10px`."
+        ],
+        "3": [
+          "Добавим наги игровые карточки внутри элемента `div.field`.",
+          "Их должно быть 16, все созданы с помощью тега `div` с классом `card`.",
+          "",
+          "Карточки наши должны переворачиваться, так что должны состоять из вух частей.",
+          "Для правильной анимации переворачивания добавь внутри `div.card` элемент `div.card-inner`.",
+          "А уже внутри `div.card-inner` две стороны - `div.card-front` и `div.card-back`.",
+          "",
+          "Для изображений на карточках будем использовать эмоджи.",
+          "Что бы упростить сравнение карточек в будущем добавим каждой атрибут `type`.",
+          "Будем использовать следующие эмоджи - `129409`, `9917`, `127758`, `127790`, `127789`, `127823`, `127844`, `127849`.",
+          "Каждого должно быть по два - указывай каждый пару в порядке выше.",
+          "",
+          "Отображать эмоджи мы будем на обратной стороне карточки.",
+          "Для этого для каждой карточке нужно повторить код эмоджи внутри элемента `div.card-bac`.",
+          "Только не забудь вначале добавить `&#`, а в конце - `;`."
+        ],
+        "4": [
+          "Надо стилизовать наши карточки. Каждая должна быть квадратом размером `16vh`.",
+          "Поскольку по каждой мы будем кликать, `cursor` должен быть `pointer`.",
+          "Размер шрифта (которые указывает размер эмоджи) должен быть `10vh`.",
+          "Не забудь указать глубину перспективы для преобразований. Скажем `1000px`.",
+          "",
+          "Размер `.card-inner` должен быть равен размеру родительского элемента.",
+          "Позиционирование элемента должно быть относительно начального положения.",
+          "Свойство `transform-style` должно равняться `preserve-3d`.",
+          "И давай добавим переход для свойства `transform` длительностью `0.6s`."
+        ],
+        "5": [
+          "Переходим к сторонам карточки. Каждая должна быть размером с родительский элемент.",
+          "Они должны быть абсолютно позиционированы, и задняя сторона каждой должна быть скрыта.",
+          "Цвет заднего фона каждой стороны `#F7D002`, а углы скруглены на `10px`.",
+          "",
+          "Эмоджи на задней стенке должны быть размещены по середине (для этого используй `grid`).",
+          "Сразу развернем заднюю сторону на 180 градусов вокруг оси Y."
+        ],
+        "6": [
+          "Напишем немного скрипта. Скрипты будем писать в файле `script.js`.",
+          "В файле добавим обработчик нажатия на карточки.",
+          "При нажатии мы должны добавлять карточке класс `opened`.",
+          "У элемента `.card.opened` дочерний элемент `.card-inner` должен разворачиваться вокруг оси Y на 180 градусов.",
+          "",
+          "Не забудь подключить скрипт."
+        ],
+        "7": [
+          "Добавим функцию `init` в скрипте (все функции должны быть добавлены функциональным объявлением).",
+          "Эту функцию мы будем использовать для инициализации новой игры.",
+          "",
+          "Также добавим три переменные: ",
+          " - `opened` - пустой массив, где будут хранится открытые для сравнения карты;",
+          " - `matched` - начальное значение `0`, количество карт, которые совпали;",
+          " - `moves` - начальное значение `0`, количество сделанных шагов.",
+          "",
+          "Функция `init` должна сбрасывать значение переменных `matched` и `moves` в `0`.",
+          "",
+          "Функция `init` должна сразу вызываться в `script.js`."
+        ],
+        "8": [
+          "При каждой инициализации игры карточки должны быть перемешаны.",
+          "Для этого добавим функцию `shuffle`.",
+          "Эта функция должна получать только один аргумент - массив.",
+          "Функция должна возвращать новый массив, состоящий из перемешанных элементов входящего массива.",
+          "",
+          "Функцию `shuffle` нужно вызывать внутри функции `init`.",
+          "Аргументом при вызове должен быть массив, созданный из списка узлов `.card`.",
+          "",
+          "Каждый элемент полученного массива нужно добавить элементу `.field`."
+        ],
+        "9": [
+          "Переменную `moves` мы будем использовать для подсчета шагов.",
+          "Это количество также будем показывать и игроку.",
+          "",
+          "Для этого добавь элемент `div.moves-counter` после заголовка `h1`.",
+          "Показывать внутри этого элемента будет текст: `Moves: <amount>`",
+          "Вместо `<amount>` будем отображать количество шагов, обернутой тегом `span`.",
+          "Изначальное будем показывать `0`.",
+          "Из стилей для `.moves-counter` добавим только нижнее поле `10px`.",
+          "",
+          "Также добавим функцию `addMove` в скрипт.",
+          "Она должна увеличивать значение переменной `moves` на `1`.",
+          "Также текст внутри `.moves-counter span` должен изменится на новое значение `moves`."
+        ],
+        "10": [
+          "В конце игры будем показывать модальное окно.",
+          "Добавь элемент `div.modal` после тега `main`, но перед тегом `script`.",
+          "Модалка состоит из двух частей подложки (`div.overlay`) и контента (`div.content`).",
+          "Контент должен состоять из трех частей: ",
+          " - заголовка - `h2.congratulation-header` с текстом `Congratulations`;",
+          " - сообщения - `div.congratulation-message` с текстом `You did 0 step(s) to win! Can you do better?`;",
+          " `0` должен быть обрамлен тегом `span`.",
+          " - кнопки - `button.#try-again` с текстом `Try again`."
+        ],
+        "11": [
+          "Стилизуем наше модальное окно. Изначально `.modal` не должен отображаться.",
+          "А размеры его должны равняться размерам экрана.",
+          "Положение фиксированное, что бы полностью занимать весь экран.",
+          "",
+          "Подложка должна создавать эффект затемнения.",
+          "По-этому `div.overlay` должен по размерам равняться родителю и должен быть зафиксирован.",
+          "Задний фон - `#424B54`, прозрачность - `0.2`.",
+          "Добавь также `z-index`, равный 1 (что бы подложка была поверх других элементов)."
+        ],
+        "12": [
+          "`div.content` должен быть абсолютно позиционирован.",
+          "От верху элемент должен сместится на `10vh`, слева - `5vw`.",
+          "Ширина должна быть `90vw`, `z-index` - 2 (что бы быть поверх подложки).",
+          "Цвет заднего фона `white`, углы скруглены на `10px`.",
+          "",
+          "Текст заголовка модального окна должен быть отцентирован, как и текст сообщения.",
+          "Нижний отступ сообщения (.congratulation-message) должен быть `20px`.",
+          "Размер шрифта сообщения- `1.1rem`."
+        ],
+        "13": [
+          "Кнопку `#try-again` нужно сделать блочным элементом, что бы добавить ей поля.",
+          "Верхнее должно быть `0px`, нижнее `20px`, боковые - `auto` (что бы отцентрировать).",
+          "`border` и `outline` свойства кнопки должны равняться `none`.",
+          "Размер шрифта `1.1rem`, вертикальные отступы - `8px`, горизонтальные - `16px`.",
+          "Углы скруглены - `4px`, а курсор `pointer`.",
+          "Задний фон `#938BA1`, а цвет текста - `white`."
+        ],
+        "14": [
+          "Добавим функцию `showModal`, которая будет показывать модальное окно.",
+          "Функция должна заменять внутренний текст `.congratulation-message span` на значение переменной `moves`.",
+          "Чтобы отобразить модалку, надо добавить стиль `display` со значением `block`.",
+          "",
+          "И доработаем функцию `init`. Она должна изменять текст `.moves-counter span` на значение `moves`.",
+          "А для `.modal` свойство `display` должно поменять значение на `none`.",
+          "",
+          "Функцию `init`, к стати, нужно вызывать при нажатии на кнопку `#try-again`."
+        ],
+        "15": [
+          "Теперь напишем логику хода игры и ее завершения.",
+          "При нажатии на карточку, она должна добавляться в массив `opened`.",
+          "И сразу должна вызываться функция `addMove`.",
+          "",
+          "Когда у массиве `opened` есть два элемента, нужно делать все проверки.",
+          "Если карточки не совпадут - их нужно скрыть обратно через 1 сек.",
+          "По истечении одной секунды, у каждый элемент в массиве `opened` надо удалить класс `opened`.",
+          "Ну и массив стоит обнулить.",
+          "",
+          "Ну и пока мы ждем эту секунду (пока в массиве два элемента) нажатие по карточкам ничего не должны делать."
+        ],
+        "16": [
+          "Если у двух элементов массива `opened` совпадают атрибуты `type` - игрок открыл две одинаковые карточки.",
+          "Тогда каждой нужно добавить класс `match` - он должен делать тоже, что и класс `opened`.",
+          "И значение переменной `matched` должно вырасти на `2`.",
+          "",
+          "Когда `matched` равняется 16, это значит, что все карты открыты и игра закончена.",
+          "Значит надо вызвать функцию `showModal`, которая покажет игроку результат игры.",
+          "",
+          "Игрок может начать новую игру. Для этого карточки нужно скрыть.",
+          "Функция `init` должна удалять класс `match` у всех элементов `.card`."
+        ]
+      }
+    }
+  }
+}

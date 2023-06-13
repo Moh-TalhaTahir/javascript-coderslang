@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Memory game</title>
+   <style>
+    body {
+      margin: 0;
+      width: 100%;
+      height: 100vh;
+      display: grid;
+      place-items: center;
+      background-color: #555e7e;
+    }
+    * {
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    }
+    div.field {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+      padding: 20px;
+      background-color: #424b54;
+      border-radius: 10px;
+    }
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .card {
+      height: 16vh;
+      width: 16vh;
+      cursor: pointer;
+      font-size: 10vh;
+      perspective: 1000px;
+    }
+    .card-inner {
+      position: relative;
+      transition: transform 0.6s;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+    }
+    .card-front {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      background-color: #f7d002;
+      border-radius: 10px;
+    }
+    .card-back {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: #f7d002;
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      transform: rotateY(180deg);
+    }
+    .card.opened .card-inner {
+      transform: rotateY(180deg);
+    }
+    .card.match .card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .moves-counter {
+      margin-bottom: 10px;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+    }
+    div.overlay {
+      position: fixed;
+      background-color: #424b54;
+      opacity: 0.2;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+    }
+    div.content {
+      position: absolute;
+      top: 10vh;
+      left: 5vw;
+      width: 90vw;
+      z-index: 2;
+      background-color: white;
+      border-radius: 10px;
+    }
+    .content h2 {
+      text-align: center;
+    }
+
+    .congratulation-message {
+      font-size: 1.1rem;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    #try-again {
+  display: block;
+  margin: 0 auto 20px;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #938ba1;
+  color: white;
+}
+
+   </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <header>
+          <h1>Memory Game</h1>
+          <div class="moves-counter">
+            Moves:
+            <span>0</span>
+          </div>
+        </header>
+        <div class="field">
+          <div class="card" type="129409">
+            <div class="card-inner">
+              <div class="card-front"></div>
+              <div class="card-back">&#129409;</div>
+            </div>
+          </div>
+          <div class="card" type="129409">
+            <div class="card-inner">
+              <div class="card-front"></div>
+              <div class="card-back">&#129409;</div>
+            </div>
+          </div>
+          <div class="card" type="9917">
+            <div class="card-inner">
+              <div class="card-front"></div>
+              <div class="card-back">&#9917;</div>
+            </div>
+          </div>
+          <div class="card" type="9917">
+            <div class="card-inner">
+              <div class="card-front"></div>
+              <div class="card-back">&#9917;</div>
+            </div>
+          </div>
+          <div class="card" type="127758">
+            <div class="card-inner">
+              <div class="card-front"></div>
+              <div class="card-back">&#127758;</div>
+            </div>
+          </div>
+          <div class="card" type="127758">
+            <div class="card-inner">
+              <div class="card-front"></div>
+              <div class="card-back">&#127758;</div>
+            </div>
+          </div>
+          <div class="card" type="127790">
+            <div class="card-inner">
+              <div class="card-front"></div>
+              <div class="card-back">&#127790;</div>
+            </div>
+          </div>
+          <div class="card" type="127790">
+            <div class="card-inner">
+              <div class="card-front"></div>
+              <div class="card-back">&#127790;</div>
+            </div>
+          </div>
+          <div class="card" type="127789">
+            <div class="card-inner">
+              <div class="card-front"></div>
+              <div class="card-back">&#127789;</div>
+            </div>
+          </div>
+          <div class="card" type="127789">
+            <div class="card-inner">
+              <div class="card-front"></div>
+              <div class="card-back">&#127789;</div>
+            </div>
+          </div>
+          <div class="card" type="127823">
+            <div class="card-inner">
+              <div class="card-front"></div>
+              <div class="card-back">&#127823;</div>
+            </div>
+          </div>
+          <div class="card" type="127823">
+            <div class="card-inner">
+              <div class="card-front"></div>
+              <div class="card-back">&#127823;</div>
+            </div>
+          </div>
+          <div class="card" type="127844">
+            <div class="card-inner">
+              <div class="card-front"></div>
+              <div class="card-back">&#127844;</div>
+            </div>
+          </div>
+          <div class="card" type="127844">
+            <div class="card-inner">
+              <div class="card-front"></div>
+              <div class="card-back">&#127844;</div>
+            </div>
+          </div>
+          <div class="card" type="127849">
+            <div class="card-inner">
+              <div class="card-front"></div>
+              <div class="card-back">&#127849;</div>
+            </div>
+          </div>
+          <div class="card" type="127849">
+            <div class="card-inner">
+              <div class="card-front"></div>
+              <div class="card-back">&#127849;</div>
+            </div>
+          </div>
+          </div>
+          <!-- Other card elements -->
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal">
+      <div class="overlay"></div>
+      <div class="content">
+        <h2 class="congratulation-header">Congratulations</h2>
+        <div class="congratulation-message">You did <span>0</span> step(s) to win! Can you do better?</div>
+        <button id="try-again">Try again</button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

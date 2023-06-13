@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>2D transform</title>
+    <style>
+      body {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+      }
+      .container, .element, .substrate  {
+        width: 100px;
+        height: 100px;
+        border-radius: 3px;
+      }
+      .container, .element {
+        position: relative;
+      }
+      .container + .container {
+        margin-left: 64px;
+      }
+      .substrate {
+        position: absolute;
+        background-color: #DBE4EE;
+        border: 2px dashed #81A4CD;
+        box-sizing: border-box;
+      }
+      .element {
+        display: grid;
+        place-items: center;
+        color:white;
+        font-size: 40px;
+        font-family: monospace;
+      }
+      .element.one {
+        background-color: #6E44FF;
+        transform: scaleX(0.33);
+      }
+      .element.two {
+        background-color: #B892FF;
+       
+        transform: translate(50%,50%) scale(0.5);
+      }
+      .element.three {
+        background-color: #FFC2E2;
+        
+        transform: rotate(45deg) scale(0.7);
+      }
+      .element.four {
+        background-color: #FF90B3;
+        transform: skewX(-20deg);
+        transform-origin: bottom right;
+      }
+      .element.five {
+        background-color: #EF7A85;
+        transform:translate(0,50%) rotate(-45deg) ;
+        transform-origin: 0 0;        
+
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="substrate"></div>
+      <div class="element one">1</div>
+    </div>
+    <div class="container">
+      <div class="substrate"></div>
+      <div class="element two">2</div>
+    </div>
+    <div class="container">
+      <div class="substrate"></div>
+      <div class="element three">3</div>
+    </div>
+    <div class="container">
+      <div class="substrate"></div>
+      <div class="element four">4</div>
+    </div>
+    <div class="container">
+      <div class="substrate"></div>
+      <div class="element five">5</div>
+    </div>
+  </body>
+</html>

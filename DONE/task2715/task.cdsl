@@ -1,0 +1,31 @@
+{
+  "jsLectureId": 271,
+  "reward": 4,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "What a view !!!",
+      "description": [
+        "Let's write a script and transformations that will open the window.",
+        "When clicking on the button of an element with the class `.blind`, you need to add the class `.opened`.",
+        "When adding the `.opened` class, the shutters (`.blind`) must rotate `15` degrees and move `100px` along the` X` axis.",
+        "Note - the direction of opening and shift on `.left` and `.right` are different.",
+        "We also need to move the shutters a little further away from us - `15px`."
+      ]
+    },
+    "ru": {
+      "title": "Какой вид!!!",
+      "description": [
+        "Давай напишем скрипт и трансформации, которые будут открывать окно.",
+        "При нажатии на кнопку элементам с классом `.blind` нужно добавить класс `.opened`.",
+        "При добавлении класса `.opened`, ставни (`.blind`) должны поворачиваться на `15` градусов и сдвигаться на `100px` вдоль оси `X`.",
+        "Учти - направление открытия и сдвига на `.left` и `.right` разные.",
+        "Также надо ставни немного отдалить от нас - на `15px`."
+      ]
+    }
+  }
+}

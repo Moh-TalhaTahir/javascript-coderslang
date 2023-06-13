@@ -1,0 +1,31 @@
+{
+  "jsLectureId": 262,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Validation and UX",
+      "description": [
+        "It is necessary to show the user when the data entered in the form is sufficient.",
+        "If the user has entered more than 4 characters in both the email and password fields, change the background of the button to `#90E39A`.",
+        "If the user deletes characters in at least one field and there are less then 5 symbols, the background color should be returned.",
+        "Use the internal script.",
+        "Use `input` event for handling text input"
+      ]
+    },
+    "ru": {
+      "title": "Валидация и UX",
+      "description": [
+        "Необходимо показать пользователю, когда введенных в форме данных достаточно.",
+        "Если пользователь ввел больше 4х символов и в поле email, и в поле пароль - надо поменять задний фон кнопки на `#90E39A`.",
+        "Если хотя бы в одном поле пользователь удаляет символы и их становится меньше 4x - цвет заднего фона надо вернуть.",
+        "Используй внутренний скрипт.",
+        "Используй событие `input` для обработки ввода"
+      ]
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "jsLectureId": 272,
+  "reward": 5,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Star Wars. Episode I.",
+      "description": [
+        "You've probably watched the Star Wars movies.",
+        "Now I will try to create this animation for the first episode."
+      ],
+      "stages": {
+        "1": [
+          "First of all, let's prepare the markup for our page.",
+          "Inside the body, add a div with class star-wars, inside it, add a div with class episode-intro.",
+          "The first `div.episode-intro` element should be `div.header` with two child headers `h2` and `h1` - in that order.",
+          "The heading text for `h1` is `THE PHANTOM MENACE`, for `h2` is `Episode I`.",
+          "There must be three paragraphs after `div.header`.",
+          "The text of the first paragraph is `Turmoil has engulfed the Galactic Republic. The taxation of trade routes to outlying star systems is in dispute.` ",
+          "The text of the second paragraph is `Hoping to resolve the matter with a blockade of deadly battleships, the greedy Trade Federation has stopped all shipping to the small planet of Naboo.` ",
+          "The text of the third paragraph is `While the Congress of the Republic endlessly debates this alarming chain of events, the Supreme Chancellor has secretly dispatched two Jedi Knights, the guardians of peace and justice in the galaxy, to settle the conflict. ... "
+        ],
+        "2": [
+          "Now let's add the stylesheet.",
+          "The `body` tag should occupy the entire screen of the device, and everything beyond the `body` should be hidden.",
+          "Use the only picture from the `images` folder for the background `body`.",
+          "The picture should fill the entire space without distortion.",
+          "",
+          "The text of the `h1` and `h2` headings must be centered.",
+          "",
+          "Content inside `div.star-wars` must be centered horizontally (use flex).",
+          "Block height should be `800px`, text color should be `#feda4a`, font family should be `sans-serif`, intensity should be `600`.",
+          "Font size - `500%`, line height - `150%`, letter spacing - `6px`.",
+          "The text should be stretched to full width.",
+          "Let's also specify the perspective `400px` - the text should go into the distance."
+        ],
+        "3": [
+          "Final touches and animation.",
+          "Add relative positioning to the `div.episode-intro` element.",
+          "This will allow us to move it relative to its initial position.",
+          "And immediately hide our text - add the `top` property with the value `100%`.",
+          "This way the block will be hidden both before and after the animation.",
+          "Move the transformation center to the point with coordinates `50%, 100%`.",
+          "The `animation` property must specify an `intro-animation` animation, with a duration of `60s`.",
+          "Animation must be linear.",
+          "",
+          "The animation itself should have two points - a start and an end.",
+          "The first step changes the `top` property to `0` and also the `transform` property:",
+          "first rotate around the x-axis by `20` degrees, and shift along the z-axis by `0px`.",
+          "",
+          "The second step changes the `top` property to `-6000px` and also the `transform` property:",
+          "first rotate around the x-axis by `25` degrees, and shift along the z-axis by `-2500px`."
+        ]
+      },
+      "final": [
+        "You have completed the task, now you are a real Jedi!"
+      ]
+    },
+    "ru": {
+      "title": "Star Wars. Episode I.",
+      "description": [
+        "Ты наверняка смотрел фильмы Star Wars. Помнишь, в начале каждого фильма идут титры с предысторией?",
+        "Сейчас попробуем сделать такую анимацию для первого эпизода."
+      ],
+      "stages": {
+        "1": [
+          "Первым делом подготовим разметку нашей страницы.",
+          "Внутри `body` добавим `div` с классом `star-wars`, внутри него - один `div` с классом `episode-intro`.",
+          "Первым элементом `div.episode-intro` должен стать `div.header` с двумя дочерними заголовками `h2` и `h1` - именно в таком порядке.",
+          "Текст заголовка `h1` - `THE PHANTOM MENACE`, `h2` - `Episode I`.",
+          "После `div.header` должно быть три параграфа.",
+          "Текст первого параграфа - `Turmoil has engulfed the Galactic Republic. The taxation of trade routes to outlying star systems is in dispute.`",
+          "Текст второго параграфа - `Hoping to resolve the matter with a blockade of deadly battleships, the greedy Trade Federation has stopped all shipping to the small planet of Naboo.`",
+          "Текст третьего параграфа - `While the Congress of the Republic endlessly debates this alarming chain of events, the Supreme Chancellor has secretly dispatched two Jedi Knights, the guardians of peace and justice in the galaxy, to settle the conflict. ...`"
+        ],
+        "2": [
+          "Теперь добавим странице стилей.",
+          "Тег `body` должен занимать весь экран устройства, а все что выходит за `body` - должно быть скрыто.",
+          "Единственную картинку из папки `images` используй для заднего фона `body`",
+          "Картинка должна без искажения заполнять все пространство.",
+          "",
+          "Текст заголовков `h1` и `h2` должен быть отцентрирован.",
+          "",
+          "Контент внутри `div.star-wars` должен быть отцентрирован по горизонтали (используй flex)",
+          "Высота блока должна быть `800px`, цвет текста - `#feda4a`, семейство шрифтов - `sans-serif`, интенсивность - `600`.",
+          "Размер шрифта - `500%`, высота строки - `150%`, расстояние между буквами - `6px`.",
+          "Текст должен быть растянут на всю ширину.",
+          "Укажем также перспективу `400px` - текст же должен уходить вдаль."
+        ],
+        "3": [
+          "Финальные штрихи и анимация.",
+          "Добавь элементу `div.episode-intro` относительное позиционирование.",
+          "Это позволит сдвигать нам его относительно начального положения.",
+          "И сразу спрячем наш текст - добавь свойство `top` со значением `100%`.",
+          "Таким образом блок будет спрятан и до, и после анимации.",
+          "Сместим центр трансформации в точку с координатами `50%, 100%`.",
+          "Свойство `animation` должно указать анимацию `intro-animation`, длительностью `60s`.",
+          "Анимация должна быть линейной.",
+          "",
+          "У самой анимации должно быть две точки - начало и конец.",
+          "Первый шаг меняет свойство `top` на `0`, а также свойство `transform`:",
+          "сначала поворот вокруг оси X на `20` градусов, и сдвиг вдоль оси Z на `0px`.",
+          "",
+          "Второй шаг меняет свойство `top` на `-6000px`, а также свойство `transform`:",
+          "сначала поворот вокруг оси X на `25` градусов, и сдвиг вдоль оси Z на `-2500px`."
+        ]
+      },
+      "final": [
+        "Ты справился с задачей, теперь ты настоящий джедай!"
+      ]
+    }
+  }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Transitions</title>
+    <style>
+      body {
+          display: grid;
+          place-items: center;
+      }
+      .box {
+          width: 200px;
+          height: 200px;
+          border-radius: 8px;
+          background-color: #DDFFF7;
+          transition-property: width, height, border-radius, background-color; /* Add transition properties */
+          transition-delay: 1s, 2s, 2s, 0s; /* Add transition delays */
+          transition-duration: 4s, 4s, 4s, 4s; /* Add transition durations */
+      }
+      .box:hover {
+          width: 400px;
+          height: 400px;
+          border-radius: 50%;
+          background-color: #861657;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

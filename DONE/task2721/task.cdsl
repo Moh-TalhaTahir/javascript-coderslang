@@ -1,0 +1,31 @@
+{
+  "jsLectureId": 272,
+  "reward": 1,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Netflix",
+      "description": [
+        "Hovering over any item in the Netflix shows list should cause transition:",
+        "- the value of the `margin-left` property should become `-300px`;",
+        "- the value of the `font-size` property should be 32px.",
+        "The duration of the transition is `1s`, the timing function is `ease-in-out`.",
+        "Use one property to describe the transition."
+      ]
+    },
+    "ru": {
+      "title": "Netflix",
+      "description": [
+        "При наведении на любой элемент списка шоу Netflix должен происходить переход:",
+        "  - значение свойства `margin-left` должно стать `-300px`;",
+        "  - значение свойства `font-size` должно стать 32px.",
+        "Длительность перехода - `1s`, функция времени - `ease-in-out`.",
+        "Для описания перехода используй одно свойство."
+      ]
+    }
+  }
+}

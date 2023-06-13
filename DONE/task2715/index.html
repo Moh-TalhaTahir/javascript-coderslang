@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Window</title>
+    <style>
+      body {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+      }
+      .window {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        perspective: 200px;
+        border: 5px solid #312509;
+      }
+      .view {
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+        background-image: url(images/mountains.jpeg);
+        background-size: cover;
+      }
+      .blind {
+        position: absolute;
+        width: 100px;
+        height: 200px;
+        top: 0;
+        background-color: #65532F;
+        border: 5px solid #312509;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        transition: transform 0.5s; /* Add transition property for smooth animation */
+      }
+      .blind.left.opened {
+        transform: rotateY(15deg) translateX(-100px) translateZ(-15px);
+      }
+      .blind.right.opened {
+        transform: rotateY(-15deg) translateX(100px) translateZ(-15px);
+      }
+      .plank {
+        width: 75%;
+        height: 8px;
+        background-color: #312509;
+      }
+      .right {
+        right: 0;
+      }
+      button {
+        margin-top: 20px;
+        width: 100%;
+        border-radius: 5px;
+        padding: 8px;
+        border: none;
+        outline: none;
+      }
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const leftBlind = document.querySelector('.blind.left');
+        const rightBlind = document.querySelector('.blind.right');
+        const button = document.querySelector('button');
+
+        button.addEventListener('click', () => {
+          leftBlind.classList.add('opened');
+          rightBlind.classList.add('opened');
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="window">
+      <div class="view"></div>
+      <div class="blind left">
+        <div class="plank"></div>
+        <div class="plank"></div>
+        <div class="plank"></div>
+        <div class="plank"></div>
+        <div class="plank"></div>
+      </div>
+      <div class="blind right">
+        <div class="plank"></div>
+        <div class="plank"></div>
+        <div class="plank"></div>
+        <div class="plank"></div>
+        <div class="plank"></div>
+      </div>
+      <button>Open the window</button>
+    </div>
+  </body>
+</html>

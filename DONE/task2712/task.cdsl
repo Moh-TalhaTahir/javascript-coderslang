@@ -1,0 +1,73 @@
+{
+  "jsLectureId": 271,
+  "reward": 1,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "The Cube",
+      "description": [
+        "Let's make a cube of three squares.",
+        "In our projection, the top side of the cube will be visible to us and it will be rotated 45 degrees.",
+        "Let's get to work!"
+      ],
+      "stages": {
+        "1": [
+          "Let's start by preparing the top side (the `.side.top` element). ",
+          "First we need to rotate this element 45 degrees.",
+          "Let's do it counterclockwise.",
+          "Then we will distort this shape 15 degrees in both directions."
+        ],
+        "2": [
+          "Now let's move on to the left side. First, rotate it 15 degrees clockwise.",
+          "Then we will distort the same by 15 degrees.",
+          "Now it remains to put it in place - along the horizontal axis, it should be shifted by half its width.",
+          "Vertically, you need to move the side to its full height, so that it falls into place."
+        ],
+        "3": [
+          "The right side should be mirrored to the left. So we'll first rotate it 15 degrees counterclockwise.",
+          "We will also distort it by 15 degrees, but only in a different direction.",
+          "To put the side in place, lower it down to its full height.",
+          "And don't forget to slide to the right half the width."
+        ]
+      },
+      "final": [
+        "This is how we made a three-dimensional figure with the help of simple transformations."
+      ]
+    },
+    "ru": {
+      "title": "Кубик",
+      "description": [
+        "Сделаем из трех квадратов куб.",
+        "В нашей проекции у куба нам будет видна верхняя сторона и повернут он будет на 45 градусов.",
+        "Приступим к работе!"
+      ],
+      "stages": {
+        "1": [
+          "Начнем с подготовки верхней стороны (элемент `.side.top`).",
+          "Сначала нам надо повернуть этот элемент на 45 градусов.",
+          "Давай сделаем это против часовой стрелки.",
+          "Затем исказим эту фигура на 15 градусов в обоих направлениях."
+        ],
+        "2": [
+          "Займемся теперь левой частью. Сначала повернем ее на 15 градусов по часовой стрелке.",
+          "Потом точно также исказим на 15 градусов.",
+          "Теперь осталось поставить ее на место - по горизонтальной оси она должна быть сдвинута на половину своей ширины.",
+          "По вертикале надо сдвинуть сторона на всю высоту, что бы она стала на свое место."
+        ],
+        "3": [
+          "Правая сторона должна зеркальна левой. Поэтому мы ее сначала повернем на 15 градусов против часовой стрелки.",
+          "Ее мы тоже исказим на 15 градусов, но только в другом направлении.",
+          "Что бы поставить сторону на место, опусти ее на вниз на всю ее высоту.",
+          "И не забудь сдвинуть в право на половину ширины."
+        ]
+      },
+      "final": [
+        "Вот так вот с помощью не сложных трансформаций мы сделали объемную фигуру."
+      ]
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "jsLectureId": 272,
+  "reward": 3,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Flipping card",
+      "description": [
+        "Let's animate the flipping of the card "
+      ],
+      "stages": {
+        "1": [
+          "We'll do some preparation at the first step.",
+          "Firstly, the back of the map (`.face.back`) must be rotated 180 degrees around the Y axis ",
+          "Secondly, each side (`.back` and `.front`) must have a hidden back.",
+          "For the `.card` element, let's immediately add a transition for the `transform` property with a duration of one second.",
+          "Well, don't forget about the script to start the transition.",
+          "When clicking on the button on the front of the card - the `.card` element needs to be added the `flipped` class.",
+          "When you click on the button on the back of the card - the `flipped` class needs to be removed from the `.card`"
+        ],
+        "2": [
+          "We will turn the card over with trickery. If we just turn it over, it will sort of pop out a little ahead.",
+          "To avoid this, we need to shift the center of the perspective to the right of the `card` element. ",
+          "The flipped class should shift the element 100% to the left, and rotate it around the `Y` axis counterclockwise.",
+          "Also, all children of `.card` must remain in their 3d space. "
+        ]
+      },
+      "final": [
+        "Great, now you can easily add such elements to any site."
+      ]
+    },
+    "ru": {
+      "title": "Крутящаяся карточка",
+      "description": [
+        "Сделаем анимацию переворачивания карточки"
+      ],
+      "stages": {
+        "1": [
+          "На первом шаге проведем некоторую подготовку.",
+          "Во-первых, задняя часть карты (`.face.back`) должна быть развернута на `180` градусов вокруг оси `Y`",
+          "Во-вторых, у каждой стороны (`.back` и `.front`) должна быть скрыта задняя часть.",
+          "Для элемента `.card` сразу добавим переход для свойства `transform` длительностью одну секунду.",
+          "Ну и не забудь про скрипт, для запуска перехода.",
+          "При нажатии на кнопку на передней части карточки - элементу `.card` нужно добавить класс `flipped`.",
+          "При нажатии на кнопку на задней части карточки - класс `flipped` нужно убрать у `.card`"
+        ],
+        "2": [
+          "Переворот карточки у нас будет с хитростью. Если мы ее просто повернем, то она будет немного как бы вылазить наперед.",
+          "Что бы это избежать, надо у элемента `card` сместить центр перспективы вправо.",
+          "Класс flipped должен сдвигать элемент на 100% влево, и поворачивать его вокруг оси `Y` против часовой стрелке.",
+          "Также все дочерние элементы у `.card` должны оставаться в своем 3d пространстве"
+        ]
+      },
+      "final": [
+        "Отлично, теперь ты с легкость сможешь добавлять такие элементы на любой сайт."
+      ]
+    }
+  }
+}

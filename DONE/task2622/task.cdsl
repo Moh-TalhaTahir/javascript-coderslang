@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 262,
+  "reward": 1,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Getting values",
+      "description": [
+        "When you click on the `Generate greeting` button, a message of the following format should appear in the console:",
+        "`Hello, *firstName* *lastName*!`, where `*firstName*` is the value of the first field, `*lastName*` - of the second field.",
+        "After that, the fields should be cleared.",
+        "Use the internal script and the `elements` field from the form."
+      ]
+    },
+    "ru": {
+      "title": "Получаем значения",
+      "description": [
+        "При нажатии на кнопку `Generate greeting` в консоли должно появится сообщение такого формата:",
+        "`Hello, *firstName* *lastName*!`, где `*firstName*` значение первого поля, `*lastName*` - второго поля.",
+        "После этого поля должны очиститься.",
+        "Используй внутренний скрипт и поле `elements` у формы."
+      ]
+    }
+  }
+}

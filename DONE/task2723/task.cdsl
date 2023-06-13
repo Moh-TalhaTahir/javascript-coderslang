@@ -1,0 +1,63 @@
+{
+  "jsLectureId": 272,
+  "reward": 2,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "In the corners",
+      "description": [
+        "Let's add a simple animation. In it, the circle should move infinitely along the corners of the square."
+      ],
+      "stages": {
+        "1": [
+          "Let's do a little preparation before the animation.",
+          "One animation cycle of a `div.circle` element must take 8 seconds.",
+          "The animation should be repeated all the time.",
+          "Let's add the animation name right away - `circleMove`.",
+          "We'll use it to create a `keyframe` in the next step."
+        ],
+        "2": [
+          "Now let's describe our `circleMove` animation in a `keyframe`.",
+          "The starting position has already been specified.",
+          "After a quarter of the time, the circle should move to the upper right corner.",
+          "After the same time, then he should be in the lower right corner.",
+          "Then at the bottom left and at the very end will return to the starting position."
+        ]
+      },
+      "final": [
+        "Great! You can try experimenting with the animation yourself.",
+        "For example, change the speed of a circle or the direction of an animation."
+      ]
+    },
+    "ru": {
+      "title": "По углам",
+      "description": [
+        "Добавим простую анимацию. В ней круг должен бесконечно двигаться по углам квадрата."
+      ],
+      "stages": {
+        "1": [
+          "Сделаем небольшую подготовку перед анимацией.",
+          "Один цикл анимации элемента `div.circle` должен длится 8 секунд.",
+          "Повторятся же анимация должна постоянно.",
+          "Сразу добавим имя анимации - `circleMove`.",
+          "Его используем для создания `keyframe` на следующем шаге."
+        ],
+        "2": [
+          "Теперь опишем нашу анимацию `circleMove` в `keyframe`.",
+          "Начальное положение уже указано.",
+          "По истечение четверти времени круг должен переместится в верхний правый угол.",
+          "Через такое же время потом он должен оказаться в нижнем правом углу.",
+          "Затем в нижнем левом и в самом конце вернутся в начальное положение."
+        ]
+      },
+      "final": [
+        "Супер! Можешь попробовать самостоятельно поэкспериментировать с анимацией.",
+        "Например, изменить скорость движения круга или направление анимации."
+      ]
+    }
+  }
+}

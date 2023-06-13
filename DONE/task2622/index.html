@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Greetings</title>
+    <style>
+      * {
+        font-family: monospace;
+        letter-spacing: 0;
+      }
+      body {
+        margin: 0;
+        background-color: #719DCA;
+        display: grid;
+        height: 100vh;
+        place-items: center;
+      }
+      form {
+        background-color: white;
+        padding: 32px;
+      }
+      .input-wrapper {
+        display: flex;
+        margin-bottom: 16px;
+        padding: 4px;
+      }
+      input {
+        flex: 1;
+        margin-right: 16px;
+      }
+      label {
+        color: #95b8d1;
+        font-size: 12px;
+        width: 40px;
+      }
+      button {
+        width: 100%;
+        height: 28px;
+        color: white;
+        border: none;
+        outline: none;
+        background-color: #809BCE;
+      }
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded",() =>{
+        
+        document.querySelector('button').addEventListener('click',(event)=>{
+        event.preventDefault();
+          const nameGetter = document.forms["names"];
+        const fname = nameGetter.elements["firstName"];
+        const lname = nameGetter.elements["lastName"];
+        console.log(`Hello, ${fname.value} ${lname.value}!`);
+        fname.value="";
+        lname.value="";
+      })
+      })
+    </script>
+  </head>
+  <body>
+    <form name="names">
+      <div class="input-wrapper">
+        <input type="text" id="firstName" value="" name="firstName">
+        <label for="firstName">First name</label>
+      </div>
+      <div class="input-wrapper">
+        <input type="text" id="lastName" value="" name="lastName">
+        <label for="lastName">Last name</label>
+      </div>
+      <button>Generate greeting</button>
+    </form>
+  </body>
+</html>

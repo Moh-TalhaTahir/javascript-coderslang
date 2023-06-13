@@ -1,0 +1,83 @@
+{
+  "jsLectureId": 271,
+  "reward": 1,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Transforming",
+      "description": [
+        "Let's practice with 2d transforming an element"
+      ],
+      "stages": {
+        "1": [
+          "The rendering of the `.element.one` element must be compressed to three times horizontally."
+        ],
+        "2": [
+          "The element `.element.two` needs to be scaled and moved.",
+          "The display of the item must be half the size.",
+          "And the bottom-right corner of this element should stay in place."
+        ],
+        "3": [
+          "The element `.element.three` should be displayed as a diamond would normally.",
+          "Also, this diamond must fit into its initial display.",
+          "To do this, you need to reduce its display by 30 percent."
+        ],
+        "4": [
+          "The element `.element.four` needs to be turned into a box.",
+          "The bottom left corner should be 70 degrees and it should stay in place.",
+          "Use the `transform-origin` property to keep the shape from shifting.",
+          "Set the values for `transform-origin` in words."
+        ],
+        "5": [
+          "The element `.elements.five` will display as an offset diamond.",
+          "The center of transformation should be in the upper left corner.",
+          "After rotating 45 degrees, the top left corner should be in the middle of the left border of the initial display.",
+          "Remember the transformation order."
+        ]
+      },
+      "final": [
+        "Super, you coped with all the transformations"
+      ]
+    },
+    "ru": {
+      "title": "Трансформируемся",
+      "description": [
+        "Попрактикуемся с 2d трансформацией элементом"
+      ],
+      "stages": {
+        "1": [
+          "Отображение элемента `.element.one` должен быть сжато в три раза в горизонтальном направлении"
+        ],
+        "2": [
+          "Элемент `.element.two` нужно масштабировать и переместить.",
+          "Отображение элемента должно быть в два раза меньше.",
+          "А правый нижний угол этого элемента должен остаться на месте."
+        ],
+        "3": [
+          "Элемент `.element.three` должен отображаться так, как обычно отображается ромб.",
+          "Также этот ромб должен вмещаться в свой начальное отображение.",
+          "Для этого его нужно его отображение уменьшить процентов на 30."
+        ],
+        "4": [
+          "Элемент `.elements.four` нужно превратить в параллелепипед.",
+          "Левый нижний угол должен быть 70 градусов и он должен остаться на месте.",
+          "Для того, чтобы фигура не сместилась, используй свойство `transform-origin`.",
+          "Для `transform-origin` значения задай словами"
+        ],
+        "5": [
+          "Элемент `.elements.five` будет отображать как смещенный ромб.",
+          "Центр трансформации должен быть в верхнем левом углу.",
+          "После поворота на 45 градусов верхний левый угол должен оказаться по середине левой границы начального отображения.",
+          "Помни про порядок трансформации."
+        ]
+      },
+      "final": [
+        "Супер, ты справился со всеми трансформациями"
+      ]
+    }
+  }
+}

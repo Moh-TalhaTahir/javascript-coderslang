@@ -1,0 +1,33 @@
+{
+  "jsLectureId": 271,
+  "reward": 3,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Rotation controller",
+      "description": [
+        "The `index.html` file has two buttons: `# left` and` # right`. ",
+        "When the `#left` button is pressed, the `.box` element must rotate 30 degrees counterclockwise.",
+        "When the `#right` button is pressed, the `.box` element should rotate 30 degrees clockwise.",
+        "Add transformation styles using the `style` attribute. ",
+        "Initially, there should be no `style` attribute.",
+        "Use internal scripts."
+      ]
+    },
+    "ru": {
+      "title": "Контроллер поворота",
+      "description": [
+        "У `index.html` файле есть две кнопки: `#left` и `#right`.",
+        "При нажатии на кнопку `#left` элемент `.box` должен поворачиваться на 30 градусов против часовой стрелке.",
+        "При нажатии на кнопку `#right` элемент `.box` должен поворачиваться на 30 градусов по часовой стрелке.",
+        "Стили трансформации добавляй с помощью атрибута `style`.",
+        "Изначально атрибута `style` быть не должно.",
+        "Скрипты используй внутренние."
+      ]
+    }
+  }
+}

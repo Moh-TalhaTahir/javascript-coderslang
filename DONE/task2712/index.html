@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cube</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #F1FFFA;
+      }
+      body, .side {
+        display: grid;
+        place-items: center;
+      }
+      .cube {
+        position: relative;
+        width: 150px;
+        height: 310px;
+      }
+      .side {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        font-family: monospace;
+        color: white;
+        font-size: 22px;
+      }
+      .top {
+        background-color: #E2F9B8;
+      }
+      .left {
+        background-color: #BBCE8A;
+      }
+      .right {
+        background-color: #939F5C
+      }
+      .side.top{
+        transform: rotate(-45deg) skew(15deg,15deg);
+      }
+      .side.left{
+        transform: translate(-50%,100%) rotate(15deg)  skew(15deg,15deg) ;
+      }
+      .side.right{
+        transform: rotate(-15deg) skew(-15deg,-15deg) translate(50%,100%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cube">
+      <div class="side top">top</div>
+      <div class="side left">left</div>
+      <div class="side right">right</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+ {
+  "jsLectureId": 271,
+  "reward": 3,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "3D Cube",
+      "description": [
+        "Let's build a full-fledged 3D cube",
+        "Do not change already added styles, add all new styles only to existing classes."
+      ],
+      "stages": {
+        "1": [
+          "First of all, turn all the necessary sides to the desired angle.",
+          "The side with the class `back` must be rotated 180 degrees around the `Y` axis.",
+          "The left and right (`.left` and `.right`) sides must be rotated 90 degrees, each in its own direction.",
+          "The top and bottom (`.top` and `.bottom`) sides must also be turned in the desired direction already around the `X` axis. ",
+          "The front side (`.front`) does not make sense to rotate "
+        ],
+        "2": [
+          "After the sides are turned, we only see the front of the cube.",
+          "Well, the back, thanks to the transparency of the background.",
+          "To make all the sides visible, we need to add a perspective with a depth of `400px`.",
+          "You need to add it at least once.",
+          "We also need to move inward each side.",
+          "The sides rotated about their middle and therefore we will move them by half the width of the side."
+        ],
+        "3": [
+          "Let's rotate our cube a little so that the inscriptions do not merge.",
+          "The cube will be rotated around the `X` axis by `-5` degrees.",
+          "Do not forget that all other elements that we have transformed must remain in their 3D space."
+        ]
+      },
+      "final": [
+        "Super! As for me, the cube created in 3d looks cooler than the one we did before."
+      ]
+    },
+    "ru": {
+      "title": "3D куб",
+      "description": [
+        "Построим полноценный 3D куб.",
+        "Не изменяй уже добавленные стили, все новые стили добавляй только к уже существующим классам."
+      ],
+      "stages": {
+        "1": [
+          "Первым делом повернем на нужный угол все необходимые стороны.",
+          "Сторона с классом `back` должна быть развернута на 180 градусов вокруг оси `Y`.",
+          "Левая и правая (`.left` и `.right`) стороны должны быть развернуты на 90 градусов, каждая в своем направлении.",
+          "Верхняя и нижняя (`.top` и `.bottom`) стороны должны быть тоже развернуты в нужном направлении уже вокруг оси `X`.",
+          "Переднюю сторону (`.front`) нет смысла вращать"
+        ],
+        "2": [
+          "После того, как стороны повернуты, мы видим только переднюю часть куба.",
+          "Ну и заднюю, благодаря прозрачности фона.",
+          "Что бы все стороны стали видны нам нужно добавить перспективу с глубиной `400px`.",
+          "Добавлять ее нужно один раз.",
+          "Также нам надо сдвинуть вглубь каждую из сторон.",
+          "Стороны вращались относительно своей середины и поэтому сдвигать мы их будет на половину ширины стороны."
+        ],
+        "3": [
+          "Повернем немного наш куб, что бы надписи не сливались.",
+          "Куб будем поворачивать вокруг оси `X` на `-5` градусов.",
+          "Не забывай, что все остальные элементы, который мы трансформировали, должны оставаться в своем 3D пространстве."
+        ]
+      },
+      "final": [
+        "Супер! Как по мне, куб, созданный в 3d выглядит круче, чем тот, что мы делали раньше."
+      ]
+    }
+  }
+}

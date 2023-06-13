@@ -1,0 +1,29 @@
+{
+  "jsLectureId": 262,
+  "reward": 1,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "On focus",
+      "description": [
+        "The script is not working as expected. Let's fix it.",
+        "When the `textarea` element receives focus, the `form focused` message should appear first in the console.",
+        "After that, the message `textarea focused` should appear.",
+        "In this case, the function handlers should be preserved."
+      ]
+    },
+    "ru": {
+      "title": "On focus",
+      "description": [
+        "Скрипт работает не так как ожидается. Давай исправим.",
+        "Когда элемент `textarea` получает фокус, первым в консоли должно появится сообщение `form focused`.",
+        "После этого должно появится сообщение `textarea focused`.",
+        "При этом функции обработчики должны сохранится."
+      ]
+    }
+  }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Deposit calculator</title>
+    <style>
+      input,
+      select {
+        margin-right: 32px;
+      }
+      label {
+        margin-right: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <form name="deposit">
+      <label for="initial">Initial sum ($)</label>
+      <input type="number" name="initial" id="initial" />
+      <label for="period">Period (month)</label>
+      <select name="period" id="period">
+        <option value="0">Select period (month)</option>
+        <option value="3">3 months</option>
+        <option value="6">6 months</option>
+        <option value="12">12 months</option>
+      </select>
+      <label for="program">Program (%)</label>
+      <select name="program" id="program">
+        <option value="0">Select program</option>
+        <option value="4.5">Saving deposit program - 4.5%</option>
+        <option value="5">Deposit Universal - 5%</option>
+      </select>
+      <h2>You will get ($): <span>0</span></h2>
+    </form>
+  </body>
+  <script>
+               const calculate = (initial, period, program) => {
+                const perMonth = program / 12;
+                const result = initial + perMonth * period * (initial / 100);
+                return result;
+            };
+
+            const form = document.forms.deposit;
+
+            form.addEventListener("input", (event) => {
+                event.preventDefault();
+                const initial = Number(form.elements.initial.value);
+        const period = Number(form.elements.period.value);
+        const program = Number(form.elements.program.value);;
+                const span = document.querySelector("h2 span");
+
+                if (period === 0 || program === 0) {
+                    span.innerHTML = initial;
+                }
+
+                if (initial && period && program) {
+                    span.innerHTML = calculate(initial, period, program);
+                }
+            });
+  </script>
+</html>

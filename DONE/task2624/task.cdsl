@@ -1,0 +1,37 @@
+{
+  "jsLectureId": 262,
+  "reward": 3,
+  "tutors": [
+    "Sigma"
+  ],
+  "entryPoint": "index.html",
+  "runAs": "html",
+  "i18n": {
+    "en": {
+      "title": "Deposit",
+      "description": [
+        "It is necessary to write the logic of the deposit calculator.",
+        "You need to calculate how much interest will be charged for the billing period and add them to the initial amount.",
+        "For periods of 3 and 6 months, remember that interest is calculated on a yearly basis and will be lower for these periods.",
+        "The calculated amount upon completion of the deposit must be displayed inside the `span` in `h2`.",
+        "If only the amount is entered, but interest cannot be calculated (no period or program is selected), we show the initial amount.",
+        "The amount should change whenever the values of any field change.",
+        "Use the internal script, `input` event and a single call to `addEventListener`.",
+        "Don't change anything in the HTML code."
+      ]
+    },
+    "ru": {
+      "title": "Депозит",
+      "description": [
+        "Необходимо написать логику депозитного калькулятора.",
+        "Нужно посчитать сколько процентов будет начислено за расчетный период и добавить их к начальной сумме.",
+        "Для периодов 3 и 6 месяцев помни, что проценты вычисляются за год и за эти периоды будут меньше.",
+        "Расчетная сумма по завершению действия вклада должна выводится внутри `span` в `h2`.",
+        "Если введена только сумма, но нельзя посчитать проценты (не выбран период или программа) - показываем начальную сумму.",
+        "Сумма должна меняться при любом изменении значений любого поля.",
+        "Используй внутренний скрипт, событие `input`, один вызов `addEventListener`.",
+        "Ничего не изменяй в HTML коде."
+      ]
+    }
+  }
+}

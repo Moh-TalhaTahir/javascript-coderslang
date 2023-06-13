@@ -1,0 +1,73 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>3D Cube</title>
+    <style>
+      body {
+          font-family: monospace;
+          display: grid;
+          place-items: center;
+          height: 100vh;
+      }
+      .cube {
+          width: 150px;
+          height: 150px;
+          position: relative;
+          perspective: 400px; /* Add perspective property */
+          transform: rotateX(-5deg);
+          
+        }
+      .side {
+          position: absolute;
+          width: 150px;
+          height: 150px;
+          display: grid;
+          place-items: center;
+          font-size: 18px;
+          border: 1px solid red;
+          transform-style: preserve-3d; /* Add transform-style property */
+      }
+      .side.front {
+         background-color:  rgba(117, 244, 244, 0.5);
+         transform: rotateY(180deg) translateZ(75px);
+         transform-style: preserve-3d;
+      }
+      .side.back {
+          background-color: rgba(144, 224, 243, 0.5);
+          transform: rotateY(180deg) translateZ(75px); /* Apply translateZ after rotateY */
+          transform-style: preserve-3d;
+      }
+      .side.left {
+          background-color: rgba(184, 179, 233, 0.5);
+          transform: rotateY(-90deg) translateZ(75px); /* Apply translateZ after rotateY */
+          transform-style: preserve-3d;
+      }
+      .side.right {
+          background-color: rgba(217, 153, 185, 0.5);
+          transform: rotateY(90deg) translateZ(75px); /* Apply translateZ after rotateY */
+          transform-style: preserve-3d;
+      }
+      .side.top {
+          background-color: rgba(209, 123, 136, 0.5);
+          transform: rotateX(90deg) translateZ(75px); /* Apply translateZ after rotateX */
+          transform-style: preserve-3d;
+      }
+      .side.bottom {
+          background-color: rgba(219, 208, 83, 0.5);
+          transform: rotateX(-90deg) translateZ(75px); /* Apply translateZ after rotateX */
+          transform-style: preserve-3d;
+      }
+    </style>
+    
+  </head>
+  <body>
+  <div class="cube">
+    <div class="side front">Front</div>
+    <div class="side back">Back</div>
+    <div class="side left">Left</div>
+    <div class="side right">Right</div>
+    <div class="side top">Top</div>
+    <div class="side bottom">Bottom</div>
+  </div>
+  </body>
+</html>

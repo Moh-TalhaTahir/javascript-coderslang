@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Corners</title>
+    <style>
+      body {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+      }
+      
+      .square {
+        height: 300px;
+        width: 300px;
+        border: 4px solid #84B59F;
+        position: relative;
+      }
+      
+      .circle {
+        background-color: #69A297;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        border-radius: 50%;
+        top: -22px;
+        left: -22px;
+        animation-name: circleMove;
+        animation-duration: 8s;
+        animation-iteration-count: infinite;
+      }
+      
+      @keyframes circleMove {
+        25% {
+          top: -22px;
+          left: 282px;
+        }
+        50% {
+          top: 282px;
+          left: 282px;
+        }
+        75% {
+          top: 282px;
+          left: -22px;
+        }
+        100% {
+          top: -22px;
+          left: -22px;
+        }
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div class="square">
+      <div class="circle"></div>
+    </div>
+  </body>
+</html>
